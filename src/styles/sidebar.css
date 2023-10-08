@@ -19,5 +19,5 @@
 }
 
 .sidebar-large-button:hover {
-    /* tu vai colocar aqui ksksksks*/
+    cursor: pointer var(--white)
 }
