@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import HomeScreen from './src/screens/Home.page';
+import HomeScreen from './screens/Home.page';
 
 function App() {
   return (
