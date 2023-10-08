@@ -1,1 +1,6 @@
-.sidebar-container {}
+.left-sidebar-section {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}

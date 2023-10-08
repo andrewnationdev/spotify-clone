@@ -1,3 +1,5 @@
 export default function SidebarComponent(){
-    return(<></>);
+    return(
+        <div className="left-sidebar-section"></div>
+    );
 }
