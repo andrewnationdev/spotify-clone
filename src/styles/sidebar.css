@@ -16,7 +16,8 @@
     display: flex;
 }
 
-.library-header-title {
+.library-header-title,
+.circle-icon-button {
     color: var(--textgrey);
 }
 
@@ -26,7 +27,9 @@
     justify-content: flex-start;
 }
 
-.sidebar-large-button:hover, .library-header-title:hover {
+.sidebar-large-button:hover,
+.library-header-title:hover,
+.circle-icon-button {
     cursor: pointer;
     color: var(--primary);
 }
