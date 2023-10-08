@@ -28,6 +28,10 @@
     font-weight: bold;
 }
 
+.sidebar-large-button > i {
+    font-size: 25px !important;
+}
+
 .sidebar-large-button:hover,
 .library-header-title:hover,
 .circle-icon-button:hover {
