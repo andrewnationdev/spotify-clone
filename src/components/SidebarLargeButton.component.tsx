@@ -1,6 +1,6 @@
 export default function SidebarLargeButtonComponent(props: {
-    icon: string,
-    title: string
+    icon: string, "Home" "search"
+    title: string "Inicio" "buscar"
 }){
     return(
         <>
