@@ -6,7 +6,9 @@ export default function SidebarComponent(){
             <SidebarSectionComponent>
                 <>TESTE!</>
             </SidebarSectionComponent>
-            <SidebarSectionComponent></SidebarSectionComponent>
+            <SidebarSectionComponent>
+                <></>
+            </SidebarSectionComponent>
         </div>
     );
 }
