@@ -6,12 +6,12 @@ export default function SidebarComponent(){
         <div>
             <SidebarSectionComponent>
                 <SidebarLargeButtonComponent
-                    icon={""}
-                    title={""}
+                    icon={"home"}
+                    title={"Inicio"}
                 />
                 <SidebarLargeButtonComponent
-                    icon={""}
-                    title={""}
+                    icon={"search"}
+                    title={"Buscar"}
                 />
             </SidebarSectionComponent>
             <SidebarSectionComponent>
