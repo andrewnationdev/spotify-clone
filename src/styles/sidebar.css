@@ -19,5 +19,6 @@
 }
 
 .sidebar-large-button:hover {
-    cursor: pointer var(--white)
+    cursor: pointer;
+    color: var(--white);
 }
