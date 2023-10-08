@@ -7,6 +7,7 @@
     display: flex;
     align-items: flex-start;
     padding: 1rem;
+    color: var(--textgrey);
 }
 
 .sidebar-large-button {
