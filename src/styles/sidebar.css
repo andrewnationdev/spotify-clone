@@ -1,6 +1,5 @@
 .left-sidebar-section {
-    width: 200px;
-    height: 200px;
+    width: 266px;
     background-color: var(--grey);
     border-radius: 8px;
     margin: 8px;
@@ -8,7 +7,7 @@
     flex-direction: column;
     gap: 8px;
     align-items: flex-start;
-    padding: 1rem;
+    padding: 11.5;
     color: var(--textgrey);
 }
 
@@ -25,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    font-size: 1rem;
 }
 
 .sidebar-large-button:hover,
