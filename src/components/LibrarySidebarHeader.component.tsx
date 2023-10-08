@@ -8,7 +8,7 @@ export default function LibrarySidebarHeaderComponent(){
                 <i className="material-icons"></i>
                 <span>Sua Biblioteca</span>
             </div>
-            <div>
+            <div className="library-header-icons-container">
                 <CircleIconButtonComponent icon="add"/>
                 <CircleIconButtonComponent icon="arrow_forward"/>
             </div>

@@ -26,11 +26,12 @@
     justify-content: flex-start;
     font-size: 1rem;
     font-weight: bold;
+    gap: 1rem;
     margin: 1rem;
 }
 
 .sidebar-large-button > i {
-    font-size: 25px !important;
+    font-size: 32px !important;
 }
 
 .sidebar-large-button:hover,
@@ -38,4 +39,9 @@
 .circle-icon-button:hover {
     cursor: pointer;
     color: var(--primary);
+}
+
+.library-header-icons-container {
+    display: flex;
+    gap: 1rem;
 }
