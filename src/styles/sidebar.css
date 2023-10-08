@@ -20,6 +20,16 @@
     color: var(--textgrey);
 }
 
+.library-header-title > i {
+    font-size: 32;
+}
+
+.library-header-title {
+    font-size: 20px;
+    display: flex;
+    gap: 1rem;
+}
+
 .sidebar-large-button {
     display: flex;
     align-items: center;
@@ -27,7 +37,6 @@
     font-size: 1rem;
     font-weight: bold;
     gap: 1rem;
-    margin: 1rem;
 }
 
 .sidebar-large-button > i {
