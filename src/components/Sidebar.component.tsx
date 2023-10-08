@@ -1,5 +1,10 @@
+import SidebarSectionComponent from './SidebarSection.component';
+
 export default function SidebarComponent(){
     return(
-        <div className="left-sidebar-section"></div>
+        <div>
+            <SidebarSectionComponent/>
+            <SidebarSectionComponent/>
+        </div>
     );
 }
