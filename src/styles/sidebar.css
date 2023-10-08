@@ -12,13 +12,21 @@
     color: var(--textgrey);
 }
 
+.library-sidebar-header {
+    display: flex;
+}
+
+.library-header-title {
+    color: var(--textgrey);
+}
+
 .sidebar-large-button {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.sidebar-large-button:hover {
+.sidebar-large-button:hover, .library-header-title:hover {
     cursor: pointer;
     color: var(--primary);
 }
