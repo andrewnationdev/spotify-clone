@@ -4,8 +4,15 @@
     background-color: var(--grey);
     border-radius: 8px;
     margin: 8px;
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
 }
 
-.sidebar-large-button {}
+.sidebar-large-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 
 .sidebar-large-button:hover {}
