@@ -6,11 +6,11 @@ export default function LibrarySidebarHeaderComponent(){
         <div className="library-sidebar-header">
             <div className="library-header-title">
                 <i className="material-icons"></i>
-                <span></span>
+                <span>Sua Biblioteca</span>
             </div>
             <div>
-                <CircleIconButtonComponent icon=""/>
-                <CircleIconButtonComponent icon=""/>
+                <CircleIconButtonComponent icon="add"/>
+                <CircleIconButtonComponent icon="arrow_forward"/>
             </div>
         </div>
     );
