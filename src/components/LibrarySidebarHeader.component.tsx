@@ -1,7 +1,7 @@
 import '../styles/sidebar.css';
 import CircleIconButtonComponent from './CircleIconButton.component';
 
-export default function LibrarySidebarHeader(){
+export default function LibrarySidebarHeaderComponent(){
     return(
         <div className="library-sidebar-header">
             <div className="library-header-title">

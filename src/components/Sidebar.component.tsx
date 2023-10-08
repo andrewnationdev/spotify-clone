@@ -1,5 +1,6 @@
 import SidebarSectionComponent from './SidebarSection.component';
 import SidebarLargeButtonComponent from './SidebarLargeButton.component';
+import LibrarySidebarHeaderComponent from './LibrarySidebarHeader.component';
 
 export default function SidebarComponent(){
     return(
@@ -15,7 +16,7 @@ export default function SidebarComponent(){
                 />
             </SidebarSectionComponent>
             <SidebarSectionComponent>
-                <></>
+                <LibrarySidebarHeaderComponent/>
             </SidebarSectionComponent>
         </div>
     );
