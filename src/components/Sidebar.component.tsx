@@ -3,8 +3,10 @@ import SidebarSectionComponent from './SidebarSection.component';
 export default function SidebarComponent(){
     return(
         <div>
-            <SidebarSectionComponent/>
-            <SidebarSectionComponent/>
+            <SidebarSectionComponent>
+                <>TESTE!</>
+            </SidebarSectionComponent>
+            <SidebarSectionComponent></SidebarSectionComponent>
         </div>
     );
 }
