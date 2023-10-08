@@ -1,5 +1,5 @@
 import '../styles/sidebar.css';
-import CircleIconButtonComponent from './CircleIconButtonComponent.component';
+import CircleIconButtonComponent from './CircleIconButton.component';
 
 export default function LibrarySidebarHeader(){
     return(
