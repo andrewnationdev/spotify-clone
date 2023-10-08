@@ -20,5 +20,5 @@
 
 .sidebar-large-button:hover {
     cursor: pointer;
-    color: var(--white);
+    color: var(--primary);
 }
