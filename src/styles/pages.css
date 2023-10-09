@@ -3,7 +3,7 @@
     height: auto;
     border-radius: 8px;
     margin: 8px 8px 8px 0px;
-    background-color: var(--grey);
+    background-color: var(--lightergrey);
 }
 
 .circle-darker-button {
