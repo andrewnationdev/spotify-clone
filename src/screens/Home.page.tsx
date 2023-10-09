@@ -13,7 +13,7 @@ export default function HomeScreen() {
                 <div className="right-header-container">
                     <button className="pill-button-header white-pill">Ver planos Premium</button>
                     <button className="pill-button-header black-pill">
-                        <i className="material-icon">get_app</i>
+                        <i className="material-icons">get_app</i>
                         Instalar aplicativo
                     </button>
                 </div>
