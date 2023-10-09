@@ -13,7 +13,9 @@ export default function LibrarySidebarHeaderComponent(){
                 <CircleIconButtonComponent icon="arrow_forward"/>
             </div>
             <div className="horizontal-buttons-container">
-                
+                <button></button> "Playlists"
+                <button></button> "Artistas"
+                <button></button> "Álbums"
             </div>
         </div>
     );
