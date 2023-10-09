@@ -12,6 +12,9 @@ export default function LibrarySidebarHeaderComponent(){
                 <CircleIconButtonComponent icon="add"/>
                 <CircleIconButtonComponent icon="arrow_forward"/>
             </div>
+            <div className="horizontal-buttons-container">
+                
+            </div>
         </div>
     );
 }
