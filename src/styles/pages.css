@@ -52,10 +52,11 @@ header, .circle-darker-buttons-container, .right-header-container {
 .pill-button-header {
     border: none;
     cursor: pointer;
-    padding: 8px;
     font-weight: 700;
     display: flex;
     align-items: center;
+    width: 32px;
+    height: 164px;
 }
 
 .pill-button-header > i {
