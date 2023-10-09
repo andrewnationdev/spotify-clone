@@ -50,18 +50,17 @@ header, .circle-darker-buttons-container {
 }
 
 .pill-button-header {
-    color: white;
     border: none;
     cursor: pointer;
     padding: 8px;
 }
 
 .white-pill {
-    background-color: var(--white);
+    background-color: var(--primary);
     color: var(--black);
 }
 
 .black-pill {
     background-color: var(--black);
-    color: var(--white);
+    color: var(--primary);
 }
