@@ -31,7 +31,7 @@
     gap: 0.5rem;
 }
 
-header, .circle-darker-buttons-container, .right-header-container {
+header, .circle-darker-buttons-container, .right-header-container, .evenly-spaced-sidebar-container {
     display: flex;
 }
 
@@ -78,3 +78,10 @@ header, .circle-darker-buttons-container, .right-header-container {
     background-color: var(--black);
     color: var(--primary);
 }
+
+.evenly-spaced-sidebar-container {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.clickable-text {}

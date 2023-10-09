@@ -2,6 +2,7 @@ import SidebarSectionComponent from './SidebarSection.component';
 import SidebarLargeButtonComponent from './SidebarLargeButton.component';
 import LibrarySidebarHeaderComponent from './LibrarySidebarHeader.component';
 import '../styles/pages.css';
+import CircleIconButtonComponent from './CircleIconButton.component';
 
 export default function SidebarComponent(){
     return(
@@ -23,8 +24,12 @@ export default function SidebarComponent(){
                     <button className="pill-button-sidebar">Artistas</button>
                     <button className="pill-button-sidebar">Álbums</button>
                 </div>
-                <div className="">
-                    
+                <div className="evenly-spaced-sidebar-container">
+                    <CircleIconButtonComponent icon="search"/>
+                    <a className="clickable-text">
+                        Recentes
+                        <i className="material-icons">arrow_drop_down</i>
+                    </a>
                 </div>
             </SidebarSectionComponent>
         </div>
