@@ -19,6 +19,7 @@
 
 .horizontal-buttons-container {
     display: flex;
+    gap: 5px;
 }
 
 .circle-darker-buttons-container {

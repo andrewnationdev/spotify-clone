@@ -23,6 +23,9 @@ export default function SidebarComponent(){
                     <button className="pill-button-sidebar">Artistas</button>
                     <button className="pill-button-sidebar">Álbums</button>
                 </div>
+                <div className="">
+                    
+                </div>
             </SidebarSectionComponent>
         </div>
     );

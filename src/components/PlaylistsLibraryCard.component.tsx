@@ -1,4 +1,5 @@
-export default function PlaylistsLibraryCardComponent(){
+export default function PlaylistsLibraryCardComponent(props: {
+}){
     return(
         <></>
     );
