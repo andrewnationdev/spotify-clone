@@ -25,5 +25,10 @@ header, .circle-darker-buttons-container {
     background-color: var(--lightergrey) ;
     color: white;
     border: none;
-    cursor: pointer
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 8px;
 }
