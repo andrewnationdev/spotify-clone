@@ -62,6 +62,7 @@
 
 .playlist-card-container {
     color: var(--textgrey);
+    display: flex;
 }
 
 .playlist-card-title {
@@ -72,8 +73,6 @@
     width: 45.36px;  
     height: 45.36px; 
 }
-
-/* */
 
 .playlist-card-container:hover {
     background-color: var(--lightergrey);
