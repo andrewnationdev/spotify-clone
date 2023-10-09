@@ -58,6 +58,7 @@ header, .circle-darker-buttons-container, .right-header-container, .evenly-space
     align-items: center;
     width: 164px;
     height: 32px;
+    justify-content: center;
 }
 
 .pill-button-header > i {
