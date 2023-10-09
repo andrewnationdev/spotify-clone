@@ -10,7 +10,7 @@ export default function HomeScreen(){
                     <CircleDarkerButtonComponent icon="keyboard_arrow_left"/>
                     <CircleDarkerButtonComponent icon="keyboard_arrow_right"/>
                 </div>
-                <div>
+                <div className="right-header-container">
                    <button className="pill-button-header white-pill">Ver planos Premium</button> 
                    <button className="pill-button-header black-pill">Instalar aplicativo</button>
                 </div>
