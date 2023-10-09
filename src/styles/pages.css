@@ -18,6 +18,10 @@
     display: flex;
 }
 
+.circle-darker-buttons-container {
+    margin-right: auto;
+}
+
 header, .circle-darker-buttons-container {
     display: flex;
 }
