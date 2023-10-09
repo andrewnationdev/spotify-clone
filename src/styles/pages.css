@@ -89,6 +89,7 @@ header, .circle-darker-buttons-container, .right-header-container, .evenly-space
     font-size: 0.8rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .clickable-text:hover {
