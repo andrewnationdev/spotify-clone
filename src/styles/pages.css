@@ -28,7 +28,7 @@ header, .circle-darker-buttons-container {
     border: none;
     cursor: pointer;
     border-top-left-radius: 20px;
-    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 8px;
