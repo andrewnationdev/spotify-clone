@@ -14,6 +14,8 @@
 .library-sidebar-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .library-header-title,
@@ -29,6 +31,7 @@
     font-size: 0.9rem;
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .sidebar-large-button {
