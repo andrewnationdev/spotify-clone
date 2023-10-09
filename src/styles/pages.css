@@ -56,7 +56,9 @@ header, .circle-darker-buttons-container, .right-header-container {
     font-weight: 700;
 }
 
-.pill-button-header:hover {}
+.pill-button-header:hover {
+    
+}
 
 .white-pill {
     background-color: var(--primary);
