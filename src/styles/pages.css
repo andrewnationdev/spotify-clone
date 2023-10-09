@@ -61,7 +61,7 @@ header, .circle-darker-buttons-container, .right-header-container, .evenly-space
 }
 
 .pill-button-header > i {
-    font-size: 0.80px;
+    font-size: 0.80rem;
 }
 
 .pill-button-header:hover {
@@ -81,7 +81,14 @@ header, .circle-darker-buttons-container, .right-header-container, .evenly-space
 
 .evenly-spaced-sidebar-container {
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
-.clickable-text {}
+.clickable-text {
+    font-size: 1rem;
+}
+
+.clickable-text:hover {
+    color: var(--textgrey);
+}
