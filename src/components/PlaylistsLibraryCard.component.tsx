@@ -1,3 +1,5 @@
+import '../style/sidebar.css';
+
 export default function PlaylistsLibraryCardComponent(props: {
     title: string
     creator: string
@@ -5,14 +7,13 @@ export default function PlaylistsLibraryCardComponent(props: {
     songs: number
 }){
     return(
-        <>
+        <div className="playlist-card-container">
             <div>
-<span></span>
             </div>
             <div>
-            <span>Imagine Dragons Best Of</span>
+                <span className="playlist-card-title">Imagine Dragons Best Of</span>
                 <span>Playlist</span>
             </div>
-        </>
+        </div>
     );
 }

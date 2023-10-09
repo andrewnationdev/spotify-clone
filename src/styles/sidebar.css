@@ -59,3 +59,11 @@
     display: flex;
     gap: 1rem;
 }
+
+.playlist-card-container {
+    color: var(--textgrey);
+}
+
+.playlist-card-title {
+    color: var(--primary);
+}

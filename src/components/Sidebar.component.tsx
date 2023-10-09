@@ -3,6 +3,7 @@ import SidebarLargeButtonComponent from './SidebarLargeButton.component';
 import LibrarySidebarHeaderComponent from './LibrarySidebarHeader.component';
 import '../styles/pages.css';
 import CircleIconButtonComponent from './CircleIconButton.component';
+import PlaylistsLibraryCardComponent from './PlaylistsLibraryCard.component';
 
 export default function SidebarComponent(){
     return(
@@ -31,6 +32,12 @@ export default function SidebarComponent(){
                         <i className="material-icons">arrow_drop_down</i>
                     </a>
                 </div>
+                <PlaylistsLibraryCardComponent
+                    title=""
+                    creator=""
+                    cover=""
+                    music={0}
+                />
             </SidebarSectionComponent>
         </div>
     );
