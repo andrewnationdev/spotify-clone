@@ -64,7 +64,8 @@ header, .circle-darker-buttons-container, .right-header-container {
 }
 
 .pill-button-header:hover {
-    padding: 15px;
+    width: 167px;
+    height: 33px;
 }
 
 .white-pill {
