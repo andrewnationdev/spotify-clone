@@ -55,8 +55,8 @@ header, .circle-darker-buttons-container, .right-header-container {
     font-weight: 700;
     display: flex;
     align-items: center;
-    width: 32px;
-    height: 164px;
+    width: 164px;
+    height: 32px;
 }
 
 .pill-button-header > i {
