@@ -1,4 +1,4 @@
-import '../style/sidebar.css';
+import '../styles/sidebar.css';
 
 export default function PlaylistsLibraryCardComponent(props: {
     title: string
