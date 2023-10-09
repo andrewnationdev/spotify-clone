@@ -53,9 +53,11 @@ header, .circle-darker-buttons-container {
 }
 
 .white-pill {
-
+    background-color: var(--white)
+    color: var(--black)
 }
 
 .black-pill {
-    
+    background-color: var(--black)
+    color: var(white)
 }
