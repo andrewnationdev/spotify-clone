@@ -11,6 +11,7 @@
     background-color: var(--lighterblack);
     border-radius: 100%;
     padding: 5px;
+    cursor: not-allowed;
 }
 
 .horizontal-buttons-container {
