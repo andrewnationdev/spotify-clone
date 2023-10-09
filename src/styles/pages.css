@@ -7,9 +7,13 @@
 }
 
 .circle-darker-button {
-    
+    color: var(--grey);
 }
 
 .horizontal-buttons-container {
+    display: flex;
+}
+
+header, .circle-darker-buttons-container {
     display: flex;
 }
