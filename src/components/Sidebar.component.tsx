@@ -36,7 +36,7 @@ export default function SidebarComponent(){
                     title=""
                     creator=""
                     cover=""
-                    music={0}
+                    songs={0}
                 />
             </SidebarSectionComponent>
         </div>
