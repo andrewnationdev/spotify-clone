@@ -86,7 +86,9 @@ header, .circle-darker-buttons-container, .right-header-container, .evenly-space
 }
 
 .clickable-text {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
 }
 
 .clickable-text:hover {
