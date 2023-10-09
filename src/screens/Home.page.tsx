@@ -11,7 +11,7 @@ export default function HomeScreen(){
                     <CircleDarkerButtonComponent icon="keyboard_arrow_right"/>
                 </div>
                 <div>
-
+                    
                 </div>
             </header>
         </div>
