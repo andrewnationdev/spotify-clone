@@ -9,3 +9,7 @@
 .circle-darker-button {
     
 }
+
+.horizontal-buttons-container {
+    display: flex;
+}
