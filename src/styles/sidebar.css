@@ -73,7 +73,7 @@
     height: 45.36px; 
 }
 
-.playlist-card-picture:hover {
+.playlist-card-container:hover {
     background-color: var(--lightergrey);
     border-radius: 8px;
     margin-left: 10px;
