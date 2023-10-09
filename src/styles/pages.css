@@ -41,7 +41,12 @@ header, .circle-darker-buttons-container {
     border-bottom-right-radius: 20px;
 }
 
-.pill-button-header {}
+.pill-button-header {
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
 
 .white-pill {}
 
