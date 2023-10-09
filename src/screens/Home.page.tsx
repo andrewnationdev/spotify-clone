@@ -1,6 +1,6 @@
 import SidebarComponent from '../components/Sidebar.component';
 import '../styles/pages.css';
-import CircleDarkerButtonComponent from '../components/CircleDarkButton.component';
+import CircleDarkerButtonComponent from '../components/CircleDarkerButton.component';
 
 export default function HomeScreen(){
     return(
@@ -11,7 +11,7 @@ export default function HomeScreen(){
                     <CircleDarkerButtonComponent icon="keyboard_arrow_right"/>
                 </div>
                 <div>
-                    
+
                 </div>
             </header>
         </div>
