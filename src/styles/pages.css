@@ -13,6 +13,8 @@
     border-radius: 100%;
     padding: 5px;
     cursor: not-allowed;
+    height: 24px;
+    width: 24px;
 }
 
 .horizontal-buttons-container {
@@ -21,6 +23,7 @@
 
 .circle-darker-buttons-container {
     margin-right: auto;
+    gap: 1rem;
 }
 
 header, .circle-darker-buttons-container {
