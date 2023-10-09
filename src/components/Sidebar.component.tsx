@@ -19,9 +19,9 @@ export default function SidebarComponent(){
             <SidebarSectionComponent>
                 <LibrarySidebarHeaderComponent/>
                 <div className="horizontal-buttons-container">
-                    <button>Playlists</button> 
-                    <button>Artistas</button>
-                    <button>Álbums</button>
+                    <button className="pill-button-sidebar">Playlists</button> 
+                    <button className="pill-button-sidebar">Artistas</button>
+                    <button className="pill-button-sidebar">Álbums</button>
                 </div>
             </SidebarSectionComponent>
         </div>
