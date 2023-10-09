@@ -7,9 +7,11 @@ export default function PlaylistsLibraryCardComponent(props: {
     return(
         <>
             <div>
-
+<span></span>
             </div>
             <div>
+            <span>Imagine Dragons Best Of</span>
+                <span>Playlist</span>
             </div>
         </>
     );
