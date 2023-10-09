@@ -1,10 +1,17 @@
 export default function PlaylistsLibraryCardComponent(props: {
-    Titulo: string
-    Play_list: string
-    Album: string
-    Musicas: string
+    title: string
+    creator: string
+    cover: string
+    songs: number
 }){
     return(
-        <></>
+        <>
+            <div>
+
+            </div>
+            <div>
+                
+            </div>
+        </>
     );
 }
