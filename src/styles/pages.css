@@ -22,5 +22,8 @@ header, .circle-darker-buttons-container {
 }
 
 .pill-button-sidebar {
-
+    background-color:- #232323 ;
+    color: white;
+    border: none;
+    cursor: pointer
 }
