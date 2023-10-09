@@ -9,7 +9,7 @@ export default function PlaylistsLibraryCardComponent(props: {
     return(
         <div className="playlist-card-container">
             <div>
-                <img src="https://th.bing.com/th/id/OIP.k8VgOI80DfmuekaKmRDY5wHaHa?pid=ImgDet&rs=1" alt="" />
+                <img className="playlist-card-picture" src="https://th.bing.com/th/id/OIP.k8VgOI80DfmuekaKmRDY5wHaHa?pid=ImgDet&rs=1" alt="" />
             </div>
             <div>
                 <span className="playlist-card-title">Imagine Dragons Best Of</span>
