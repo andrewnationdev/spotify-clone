@@ -13,6 +13,7 @@
 
 .library-sidebar-header {
     display: flex;
+    align-items: center;
 }
 
 .library-header-title,
