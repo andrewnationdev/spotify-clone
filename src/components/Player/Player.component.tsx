@@ -6,7 +6,8 @@ export default function PlayerComponent(){
     return(
         <div className="player-container">
             <div className="player-left-area">
-                <img src="" alt="" srcset="" />
+                <img src="" alt=""/>
+                <span></span>
                 <span></span>
                 <FavoriteComponent/>
             </div>
