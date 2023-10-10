@@ -5,7 +5,7 @@ export default function FavoriteComponent() {
 
     return (
         <div className={""} styles={{
-            color: selected ? '' : ''
+            color: selected ? '#71d962' : '#a7a7a7'
         }} onClick={() => setSelected(!selected)}>
             {selected 
                 ? 
