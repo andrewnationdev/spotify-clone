@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   display: flex;
+  flex-direction: column;
   width: 100vw;
   min-height: 100vh;
   max-height: 100vh;
@@ -9,6 +10,11 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.main-flex {
+  display: flex;
+  width: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
