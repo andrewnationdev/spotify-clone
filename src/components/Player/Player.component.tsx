@@ -7,19 +7,19 @@ export default function PlayerComponent(){
             <div className="player-center-area">
                 <div>
                     <ButtonIconComponent isPlayButton={false}
-                        icon={""}
+                        icon={"shuffle"}
                     />
                     <ButtonIconComponent isPlayButton={false}
-                        icon={""}
+                        icon={"skip_previous"}
                     />
                     <ButtonIconComponent isPlayButton={true}
-                        icon={""}
+                        icon={"play_circle-filled"}
                     />
                     <ButtonIconComponent isPlayButton={false}
-                        icon={""}
+                        icon={"skip_next"}
                     />
                     <ButtonIconComponent isPlayButton={false}
-                        icon={""}
+                        icon={"repeat"}
                     />
                 </div>
             </div>
