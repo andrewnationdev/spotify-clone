@@ -1,13 +1,18 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
-export default function FavoriteComponent(){
+export default function FavoriteComponent() {
     const [selected, setSelected] = useState<boolean>(false);
 
-    return(
+    return (
         <div className={""} styles={{
             color: selected ? '' : ''
         }} onClick={() => setSelected(!selected)}>
-            <i className="material-icons">favorite</i>
+            {selected 
+                ? 
+                <i className="material-icons">favorite</i> 
+                : 
+                <i className="material-icons">favorite_border</i>
+            }
         </div>
     );
 }
