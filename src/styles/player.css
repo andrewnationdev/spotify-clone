@@ -8,3 +8,18 @@
 .player-center-area {}
 
 .player-right-area {}
+
+.buttons-container {
+    display: flex;
+}
+
+.button-icon-large > i {
+    color: var(--textgrey);
+}
+
+.button-icon-large:hover > i {
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+
+.play-button-white {}
