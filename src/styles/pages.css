@@ -109,5 +109,5 @@ header, .circle-darker-buttons-container, .right-header-container, .evenly-space
 
 .playlist-card-description {
     font-size: 12px;
-    color: var(--textgrey)
+    color: var(--textgrey);
 }
