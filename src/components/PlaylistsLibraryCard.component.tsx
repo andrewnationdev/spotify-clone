@@ -11,8 +11,8 @@ export default function PlaylistsLibraryCardComponent(props: {
             <div>
                 <img className="playlist-card-picture" src="https://th.bing.com/th/id/OIP.k8VgOI80DfmuekaKmRDY5wHaHa?pid=ImgDet&rs=1" alt="" />
             </div>
-            <div>
-                <span className="playlist-card-title">Imagine Dragons Best Of</span>
+            <div className="playlist-card-info-container">
+                <span className="playlist-card-title">Imagine Dragons Best...</span>
                 <span className="playlist-card-description">Playlist</span>
             </div>
         </div>
