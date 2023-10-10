@@ -96,3 +96,18 @@ header, .circle-darker-buttons-container, .right-header-container, .evenly-space
 .clickable-text:hover {
     color: var(--textgrey);
 }
+
+.avatar-header {
+    border: 4px solid #0f0f0f;
+    width: 24px;
+    height: 24px;
+}
+
+.playlist-card-title {
+    font-size: 1rem;
+}
+
+.playlist-card-description {
+    font-size: 12px;
+    color: var(--textgrey);
+}
