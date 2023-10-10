@@ -101,6 +101,7 @@ header, .circle-darker-buttons-container, .right-header-container, .evenly-space
     border: 4px solid #0f0f0f;
     width: 24px;
     height: 24px;
+    border-radius: 100%;
 }
 
 .playlist-card-title {
