@@ -16,13 +16,14 @@
 
 .button-icon-large > i {
     color: var(--textgrey);
+    font-size: 1.25rem;
 }
 
 .button-icon-large:hover > i {
     color: var(--primary);
-    font-size: 1.25rem;
 }
 
 .play-button-white {
     color: var(--primary);
+    font-size: 1.50rem;
 }
