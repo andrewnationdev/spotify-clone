@@ -26,6 +26,11 @@ export default function PlayerComponent(){
                         icon={"repeat"}
                     />
                 </div>
+                <div>
+                    <span>00:00</span>
+                    <input type="range"></input>
+                    <span>02:40</span>
+                </div>
             </div>
             <div className="player-right-area"></div>
         </div>
