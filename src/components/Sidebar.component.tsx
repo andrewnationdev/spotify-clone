@@ -4,9 +4,10 @@ import LibrarySidebarHeaderComponent from './LibrarySidebarHeader.component';
 import '../styles/pages.css';
 import CircleIconButtonComponent from './CircleIconButton.component';
 import PlaylistsLibraryCardComponent from './PlaylistsLibraryCard.component';
+import { userMock } from '../../mock/userMock';
 
-export default function SidebarComponent(){
-    return(
+export default function SidebarComponent() {
+    return (
         <div>
             <SidebarSectionComponent>
                 <SidebarLargeButtonComponent
@@ -19,25 +20,28 @@ export default function SidebarComponent(){
                 />
             </SidebarSectionComponent>
             <SidebarSectionComponent>
-                <LibrarySidebarHeaderComponent/>
+                <LibrarySidebarHeaderComponent />
                 <div className="horizontal-buttons-container">
-                    <button className="pill-button-sidebar">Playlists</button> 
+                    <button className="pill-button-sidebar">Playlists</button>
                     <button className="pill-button-sidebar">Artistas</button>
                     <button className="pill-button-sidebar">Álbums</button>
                 </div>
                 <div className="evenly-spaced-sidebar-container">
-                    <CircleIconButtonComponent icon="search"/>
+                    <CircleIconButtonComponent icon="search" />
                     <a className="clickable-text">
                         Recentes
                         <i className="material-icons">arrow_drop_down</i>
                     </a>
                 </div>
-                <PlaylistsLibraryCardComponent
-                    title=""
-                    creator=""
-                    cover=""
-                    songs={0}
-                />
+                <div className="playlists-vertical">
+                    {userMock!.playlists.map((playlist) =>
+                    <PlaylistsLibraryCardComponent
+                        title={playlist.title}
+                        creator={playlist.creator}
+                        cover={playlist.cover}
+                        songs={playlist.songs}
+                    />)}
+                </div>
             </SidebarSectionComponent>
         </div>
     );
