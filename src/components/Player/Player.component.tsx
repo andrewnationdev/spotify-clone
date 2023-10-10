@@ -14,7 +14,7 @@ export default function PlayerComponent(){
                         icon={"skip_previous"}
                     />
                     <ButtonIconComponent isPlayButton={true}
-                        icon={"play_circle-filled"}
+                        icon={"play_circle_filled"}
                     />
                     <ButtonIconComponent isPlayButton={false}
                         icon={"skip_next"}

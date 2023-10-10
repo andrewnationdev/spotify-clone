@@ -13,7 +13,7 @@ export default function PlaylistsLibraryCardComponent(props: {
             </div>
             <div>
                 <span className="playlist-card-title">Imagine Dragons Best Of</span>
-                <span className=".playlist-card-description">Playlist</span>
+                <span className="playlist-card-description">Playlist</span>
             </div>
         </div>
     );
