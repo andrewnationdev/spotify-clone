@@ -18,7 +18,7 @@ export default function HomeScreen() {
                         <i className="material-icons">get_app</i>
                         Instalar aplicativo
                     </button>
-                    <AvatarCircleComponent avatarURL={""}/>
+                    <AvatarCircleComponent avatarURL={userMock.avatar}/>
                 </div>
             </header>
         </div>
