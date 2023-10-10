@@ -1,3 +1,7 @@
 export default function FavoriteComponent(){
-    return(<></>);
+    return(
+        <div className={""}>
+            <i className="material-icons"></i>
+        </div>
+    );
 }
