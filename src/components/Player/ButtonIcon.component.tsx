@@ -1,6 +1,6 @@
 import '../../styles/player.css'
 
-export function ButtonIconComponent(props: {
+export default function ButtonIconComponent(props: {
     isPlayButton: boolean,
     icon: string
 }) {
