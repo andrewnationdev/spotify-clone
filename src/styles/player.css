@@ -22,4 +22,6 @@
     font-size: 1.25rem;
 }
 
-.play-button-white {}
+.play-button-white {
+    color: var(--primary);
+}

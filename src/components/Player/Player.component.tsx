@@ -1,11 +1,12 @@
 import '../../styles/player.css';
+import ButtonIconComponent from './ButtonIcon.component';
 
 export default function PlayerComponent(){
     return(
         <div className="player-container">
             <div className="player-left-area"></div>
             <div className="player-center-area">
-                <div>
+                <div className="buttons-container">
                     <ButtonIconComponent isPlayButton={false}
                         icon={"shuffle"}
                     />
