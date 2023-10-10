@@ -4,7 +4,7 @@ export default function FavoriteComponent(){
     const [selected, setSelected] = useState<boolean>(false);
 
     return(
-        <div className={""}>
+        <div className={""} onClick={() => window.alert('clicou')}>
             <i className="material-icons">favorite</i>
         </div>
     );
