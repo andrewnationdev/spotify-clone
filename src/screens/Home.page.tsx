@@ -1,7 +1,7 @@
 import SidebarComponent from '../components/Sidebar.component';
 import '../styles/pages.css';
 import CircleDarkerButtonComponent from '../components/CircleDarkerButton.component';
-
+import AvatarCircleComponent from '../components/AvatarCircle.component';
 export default function HomeScreen() {
     return (
         <div className="page-container">
@@ -16,6 +16,7 @@ export default function HomeScreen() {
                         <i className="material-icons">get_app</i>
                         Instalar aplicativo
                     </button>
+                    <AvatarCircleComponent avatarURL={""}/>
                 </div>
             </header>
         </div>
