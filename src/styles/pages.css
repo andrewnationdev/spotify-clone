@@ -96,3 +96,9 @@ header, .circle-darker-buttons-container, .right-header-container, .evenly-space
 .clickable-text:hover {
     color: var(--textgrey);
 }
+
+.avatar-header {}
+
+.playlist-card-title {}
+
+.playlist-card-description {}

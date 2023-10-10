@@ -1,7 +1,9 @@
+import '../styles/pages.css';
+
 export default function AvatarCircleComponent(props: {
     avatarURL: string
 }){
     return(
-        <img src={props?.avatarURL} alt=""  />
+        <img className="avatar-header" src={props?.avatarURL} alt=""  />
     )
 }
