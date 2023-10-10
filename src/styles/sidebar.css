@@ -67,14 +67,17 @@
     border-radius: 8px;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 10px;
 }
 
 .playlist-card-title {
     color: var(--primary);
+    font-size: 1rem;
 }
 
 .playlist-card-description {
     color: var(--textgrey);
+    font-size: 12px;
 }
 
 .playlist-card-picture {
