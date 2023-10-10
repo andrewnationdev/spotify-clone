@@ -4,7 +4,7 @@ import LibrarySidebarHeaderComponent from './LibrarySidebarHeader.component';
 import '../styles/pages.css';
 import CircleIconButtonComponent from './CircleIconButton.component';
 import PlaylistsLibraryCardComponent from './PlaylistsLibraryCard.component';
-import { userMock } from '../../mock/userMock';
+import { userMock } from '../mock/userMock';
 
 export default function SidebarComponent() {
     return (
