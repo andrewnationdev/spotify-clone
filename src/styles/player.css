@@ -1,6 +1,7 @@
 .player-container {
     height: 56px;
     padding: 6px;
+    display: flex;
 }
 
 .player-left-area {}
