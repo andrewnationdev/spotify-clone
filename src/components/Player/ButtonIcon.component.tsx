@@ -31,8 +31,7 @@ export default function ButtonIconComponent(props: {
                 flexDirection: 'row',
                 alignItems: 'center'
             }}>
-                
-                
+                {getIconFromVolume(volume)}
                 <div className="track-progressbar volume-bar">
                         <div style={{
                             width: '75%',
@@ -40,7 +39,7 @@ export default function ButtonIconComponent(props: {
                             height: '5px'
                         }}></div>
                     </div>
-            </> : <i className="material-icons">{props?.icon}</i>}
+            </div> : <i className="material-icons">{props?.icon}</i>}
         </div>
     )
 }
