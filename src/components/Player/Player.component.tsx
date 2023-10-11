@@ -58,8 +58,8 @@ export default function PlayerComponent() {
                     </span>
 
                     <div className="progress-bar">
-                        <div className="progress-bar-fill" idFor="progress-fill"></div>
-                        <input type="range" className="progress-slider" idFor="progress-slider"
+                        <div className="progress-bar-fill"></div>
+                        <input type="range" className="progress-slider"
                             min={0}
                             max={200}
                             onChange={(e) => setProgress(Number(e?.target?.value))}
