@@ -16,7 +16,7 @@ export default function PlayerComponent() {
 
     const convertSecondsToMinutes = (second: number) => {
         const minutes = Math.floor(second / 60);
-        const remainingSecond = second % 60;
+        const remainingSeconds = second % 60;
         const timeString = `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
 
         return timeString;
