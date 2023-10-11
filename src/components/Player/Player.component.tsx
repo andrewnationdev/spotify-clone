@@ -57,9 +57,9 @@ export default function PlayerComponent() {
                         {convertSecondsToMinutes(progress)}
                     </span>
 
-                    <div class="progress-bar">
-                        <div class="progress-bar-fill" id="progress-fill"></div>
-                        <input type="range" class="progress-slider" id="progress-slider"
+                    <div className="progress-bar">
+                        <div className="progress-bar-fill" idFor="progress-fill"></div>
+                        <input type="range" className="progress-slider" idFor="progress-slider"
                             min={0}
                             max={200}
                             onChange={(e) => setProgress(Number(e?.target?.value))}
