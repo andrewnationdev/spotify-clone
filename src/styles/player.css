@@ -111,3 +111,36 @@
     -webkit-appearance: none;
     background-color: var(--green);
 }
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    position: relative;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    width: 0;
+    background-color: #1db954;
+    position: absolute;
+  }
+  
+  .progress-slider {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    background: transparent;
+  }
+  
+  .progress-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #1db954;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }

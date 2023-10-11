@@ -1,7 +1,7 @@
 import '../../styles/player.css';
 import ButtonIconComponent from './ButtonIcon.component';
 import FavoriteComponent from './favorite.component';
-import {useState} from 'react';
+import { useState } from 'react';
 
 interface IPlayer {
     cover: string;
@@ -56,24 +56,40 @@ export default function PlayerComponent() {
                     }}>
                         {convertSecondsToMinutes(progress)}
                     </span>
-                    <input type="range" className="playbrack-track"
-                        min={0}
-                        max={200}
-                        onChange={(e) => setProgress(Number(e?.target?.value))}
-                        step={1}
-                        value={progress}
-                    />
+
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" id="progress-fill"></div>
+                        <input type="range" class="progress-slider" id="progress-slider"
+                            min={0}
+                            max={200}
+                            onChange={(e) => setProgress(Number(e?.target?.value))}
+                            step={1}
+                            value={progress}
+                        />
+                    </div>
+
                     <span style={{
                         fontSize: 12
                     }}>{convertSecondsToMinutes(200)}</span>
                 </div>
             </div>
             <div className="player-right-area">
-                <ButtonIconComponent icon={"art_track"} smaller/>
-                <ButtonIconComponent icon={"important_devices"} smaller/>
-                <ButtonIconComponent icon={"volume_up"} smaller isVolumeButton/>
-                <ButtonIconComponent icon={"picture_in_picture"} smaller/>
+                <ButtonIconComponent icon={"art_track"} smaller />
+                <ButtonIconComponent icon={"important_devices"} smaller />
+                <ButtonIconComponent icon={"volume_up"} smaller isVolumeButton />
+                <ButtonIconComponent icon={"picture_in_picture"} smaller />
             </div>
         </div>
     );
 }
+
+/**
+ * 
+ *                     <input type="range" className="playbrack-track"
+                        min={0}
+                        max={200}
+                        onChange={(e) => setProgress(Number(e?.target?.value))}
+                        step={1}
+                        value={progress}
+                    />
+ */
