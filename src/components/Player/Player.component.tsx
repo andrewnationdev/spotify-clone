@@ -1,6 +1,7 @@
 import '../../styles/player.css';
 import ButtonIconComponent from './ButtonIcon.component';
 import FavoriteComponent from './favorite.component';
+import {useState} from 'react';
 
 interface IPlayer {
     cover: string;
