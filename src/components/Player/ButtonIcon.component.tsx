@@ -6,6 +6,11 @@ export default function ButtonIconComponent(props: {
     smaller?: boolean,
     isVolumeButton?: boolean
 }) {
+
+    const convertSecondsToMinutes = () => {
+
+    }
+
     return (
         <div className={`
                 ${props?.smaller ? 'button-icon-smaller' : 'button-icon-large'}
@@ -13,7 +18,7 @@ export default function ButtonIconComponent(props: {
             `}>
             {props?.isVolumeButton ? <>
                 <i className="material-icons">{props?.icon}</i>
-                <input type="range" name="" id="" />
+                <input type="range" className="playback-track volume-track" name="" id="" />
             </> : <i className="material-icons">{props?.icon}</i>}
         </div>
     )
