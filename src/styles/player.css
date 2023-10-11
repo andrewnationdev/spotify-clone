@@ -49,7 +49,7 @@ font-size: 14px;
 }
 
 .button-icon-smaller {
-    font-size: 1.50rem;
+    font-size: 1.25rem;
     color: var(--textgrey);
     cursor: pointer;
 }
