@@ -12,7 +12,7 @@ interface IPlayer {
 }
 
 export default function PlayerComponent() {
-    const [progress, setProgress] = useState<number>(0);
+    const [progress, setProgress] = useState<number>(150);
 
     const convertSecondsToMinutes = (second: number) => {
         const minutes = Math.floor(second / 60);
@@ -57,25 +57,11 @@ export default function PlayerComponent() {
                         {convertSecondsToMinutes(progress)}
                     </span>
 
-                    <div style={{
-                        width: '402px',
-                        height: '4px',
-                        backgroundColor: '#212121'
-                    }}>
+                    <div className="track-progressbar">
                         <div style={{
-                            width: '50%',
-                            backgroundColor: '#fff'
-                        }}></div>
-                    </div>
+                            width: '75%',
+                            backgroundColor: '#fff',
 
-                    <div style={{
-                        width: '402px',
-                        height: '4px',
-                        backgroundColor: '#212121'
-                    }}>
-                        <div style={{
-                            width: '50%',
-                            backgroundColor: '#fff'
                         }}></div>
                     </div>
 
