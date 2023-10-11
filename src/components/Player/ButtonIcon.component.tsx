@@ -1,4 +1,5 @@
 import '../../styles/player.css'
+import {useState} from 'react';
 
 export default function ButtonIconComponent(props: {
     isPlayButton?: boolean,
