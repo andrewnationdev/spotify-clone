@@ -10,7 +10,9 @@
 
 .player-music-singer {}
 
-.player-left-area {}
+.player-left-area {
+    display: flex;
+}
 
 .player-center-area {}
 
