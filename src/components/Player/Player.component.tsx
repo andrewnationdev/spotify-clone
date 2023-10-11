@@ -1,20 +1,32 @@
 import '../../styles/player.css';
 import ButtonIconComponent from './ButtonIcon.component';
 import FavoriteComponent from './favorite.component';
+import { useState } from 'react';
 
 interface IPlayer {
     cover: string;
     singer: string;
     title: string;
     isFavorite: boolean;
+    length?: number;
 }
 
 export default function PlayerComponent() {
+    const [progress, setProgress] = useState<number>(150);
+
+    const convertSecondsToMinutes = (second: number) => {
+        const minutes = Math.floor(second / 60);
+        const remainingSeconds = second % 60;
+        const timeString = `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+
+        return timeString;
+    }
+
     return (
         <div className="player-container">
             <div className="player-left-area">
                 <img className="player-cover-picture" src="https://1734811051.rsc.cdn77.org/data/images/full/359628/sea-of-thieves-logo.jpg" alt="" />
-                <div>
+                <div className="player-music-info">
                     <span className="player-music-name">Título da Música</span>
                     <span className="player-music-singer">Cantor</span>
                 </div>
@@ -41,19 +53,53 @@ export default function PlayerComponent() {
                 <div className="playback-container">
                     <span style={{
                         fontSize: 12
-                    }}>00:00</span>
-                    <input type="range" className="playbrack-track"/>
+                    }}>
+                        {convertSecondsToMinutes(progress)}
+                    </span>
+
+                    <div className="track-progressbar">
+                        <div style={{
+                            width: '75%',
+                            backgroundColor: '#fff',
+                            height: '5px'
+                        }}></div>
+                    </div>
+
                     <span style={{
                         fontSize: 12
-                    }}>02:40</span>
+                    }}>{convertSecondsToMinutes(200)}</span>
                 </div>
             </div>
             <div className="player-right-area">
-                <ButtonIconComponent icon={"art_track"} smaller/>
-                <ButtonIconComponent icon={"important_devices"} smaller/>
-                <ButtonIconComponent icon={"volume_up"} smaller isVolumeButton/>
-                <ButtonIconComponent icon={"picture_in_picture"} smaller/>
+                <ButtonIconComponent icon={"file-play"} smaller isBootstrap />
+                <ButtonIconComponent icon={"question-circle"} smaller isBootstrap/>
+                <ButtonIconComponent icon={"question-circle"} smaller isBootstrap/>
+                <ButtonIconComponent icon={"speaker"} smaller isBootstrap/>
+                <ButtonIconComponent icon={"question-circle"} smaller isVolumeButton isBootstrap/>
+                <ButtonIconComponent icon={"pip"} smaller isBootstrap/>
             </div>
         </div>
     );
 }
+
+/**
+ * 
+ *                     <input type="range" className="playbrack-track"
+                        min={0}
+                        max={200}
+                        onChange={(e) => setProgress(Number(e?.target?.value))}
+                        step={1}
+                        value={progress}
+                    />
+
+                                        <div className="progress-bar">
+                        <div className="progress-bar-fill"></div>
+                        <input type="range" className="progress-slider"
+                            min={0}
+                            max={200}
+                            onChange={(e) => setProgress(Number(e?.target?.value))}
+                            step={1}
+                            value={progress}
+                        />
+                    </div>
+ */
