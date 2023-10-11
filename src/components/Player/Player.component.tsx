@@ -2,14 +2,21 @@ import '../../styles/player.css';
 import ButtonIconComponent from './ButtonIcon.component';
 import FavoriteComponent from './favorite.component';
 
-export default function PlayerComponent(){
-    return(
+interface IPlayer {
+    cover: string;
+    singer: string;
+    title: string;
+    isFavorite: boolean;
+}
+
+export default function PlayerComponent() {
+    return (
         <div className="player-container">
             <div className="player-left-area">
-                <img src="" alt=""/>
-                <span></span>
-                <span></span>
-                <FavoriteComponent/>
+                <img className="player-cover-picture" src="https://1734811051.rsc.cdn77.org/data/images/full/359628/sea-of-thieves-logo.jpg" alt="" />
+                <span className="player-music-name">Título da Música</span>
+                <span className="player-music-singer">Cantor</span>
+                <FavoriteComponent />
             </div>
             <div className="player-center-area">
                 <div className="buttons-container">

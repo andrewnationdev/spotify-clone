@@ -4,6 +4,12 @@
     display: flex;
 }
 
+.player-cover-picture {}
+
+.player-music-name {}
+
+.player-music-singer {}
+
 .player-left-area {}
 
 .player-center-area {}

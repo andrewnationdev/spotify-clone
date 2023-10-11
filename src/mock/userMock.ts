@@ -96,5 +96,11 @@ export const userMock = {
 } as {
     name: string;
     avatar: string;
-    playlists: any[]
+    playlists: any[];
+    currentlyPlaying: {
+        title: string;
+        singer: string;
+        cover: string;
+        isFavorite: boolean;
+    }
 }
