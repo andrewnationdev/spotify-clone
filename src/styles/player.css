@@ -43,7 +43,7 @@
 }
 
 .button-icon-smaller > i {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--textgrey) !important;
     cursor: pointer;
 }
