@@ -100,3 +100,13 @@
     width: 10px;
     height: 26px;
 }*/
+
+.playback-track:hover {
+    -webkit-appearance: none;
+    background-color: var(--green);
+}
+
+.volume-track:hover {
+    -webkit-appearance: none;
+    background-color: var(--green);
+}
