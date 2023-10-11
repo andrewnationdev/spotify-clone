@@ -16,7 +16,6 @@
 .player-left-area {
     display: flex;
     align-items: center;
-
 }
 
 .player-center-area {}
@@ -67,4 +66,19 @@
     color: var(--textgrey);
     display: flex;
     flex-direction: row;
+}
+
+.playback-track {
+    -webkit-appearance: none;
+    background-color: silver;
+    width: 200px;
+    height:20px;
+}
+
+.playback-track::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #666;
+    opacity: 0.5;
+    width: 10px;
+    height: 26px;
 }
