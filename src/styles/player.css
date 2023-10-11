@@ -4,7 +4,15 @@
     display: flex;
 }
 
-.player-left-area {}
+.player-cover-picture {}
+
+.player-music-name {}
+
+.player-music-singer {}
+
+.player-left-area {
+    display: flex;
+}
 
 .player-center-area {}
 
