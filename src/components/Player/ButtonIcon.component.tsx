@@ -12,9 +12,9 @@ export default function ButtonIconComponent(props: {
                 ${props?.isPlayButton ? 'play-button-white' : ''}
             `}>
             {props?.isVolumeButton ? <>
-                <i className="material-icons">{props.icon}</i>
+                <i className="material-icons">{props?.icon}</i>
                 <input type="range" name="" id="" />
-            </> : <i className="material-icons">{props.icon}</i>}
+            </> : <i className="material-icons">{props?.icon}</i>}
         </div>
     )
 }
