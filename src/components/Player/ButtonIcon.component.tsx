@@ -1,5 +1,5 @@
 import '../../styles/player.css'
-import {useState} from 'react';
+import { useState } from 'react';
 
 export default function ButtonIconComponent(props: {
     isPlayButton?: boolean,
@@ -10,14 +10,14 @@ export default function ButtonIconComponent(props: {
     const [volume, setVolume] = useState<number>(100);
 
     const getIconFromVolume = (volume: number) => {
-        if(volume == 0){
-            return <i className="material-icons">volume_mute</i>
-        } else if(volume > 0 && volume < 25){
-            return <i className="material-icons">volume_off</i>
-        } else if(volume > 25 && volume < 75){
-            return <i className="material-icons">volume_on</i>
-        } else if(volume > 75){
-            return <i className="material-icons">volume_up</i>
+        if (volume == 0) {
+            return <i className="material-icons button-icon-smaller">volume_mute</i>
+        } else if (volume > 0 && volume < 25) {
+            return <i className="material-icons button-icon-smaller">volume_off</i>
+        } else if (volume > 25 && volume < 75) {
+            return <i className="material-icons button-icon-smaller">volume_on</i>
+        } else if (volume > 75) {
+            return <i className="material-icons button-icon-smaller">volume_up</i>
         }
     }
 
@@ -33,12 +33,12 @@ export default function ButtonIconComponent(props: {
             }}>
                 {getIconFromVolume(volume)}
                 <div className="track-progressbar volume-bar">
-                        <div style={{
-                            width: '75%',
-                            backgroundColor: '#fff',
-                            height: '5px'
-                        }}></div>
-                    </div>
+                    <div style={{
+                        width: '75%',
+                        backgroundColor: '#fff',
+                        height: '5px'
+                    }}></div>
+                </div>
             </div> : <i className="material-icons">{props?.icon}</i>}
         </div>
     )
