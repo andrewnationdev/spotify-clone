@@ -57,15 +57,15 @@ export default function PlayerComponent() {
                         {convertSecondsToMinutes(progress)}
                     </span>
 
-                    <div className="progress-bar">
-                        <div className="progress-bar-fill"></div>
-                        <input type="range" className="progress-slider"
-                            min={0}
-                            max={200}
-                            onChange={(e) => setProgress(Number(e?.target?.value))}
-                            step={1}
-                            value={progress}
-                        />
+                    <div style={{
+                        width: '402px',
+                        height: '4px',
+                        backgroundColor: '#212121'
+                    }}>
+                        <div style={{
+                            width: '50%',
+                            backgroundColor: '#fff'
+                        }}></div>
                     </div>
 
                     <div style={{
@@ -103,4 +103,15 @@ export default function PlayerComponent() {
                         step={1}
                         value={progress}
                     />
+
+                                        <div className="progress-bar">
+                        <div className="progress-bar-fill"></div>
+                        <input type="range" className="progress-slider"
+                            min={0}
+                            max={200}
+                            onChange={(e) => setProgress(Number(e?.target?.value))}
+                            step={1}
+                            value={progress}
+                        />
+                    </div>
  */
