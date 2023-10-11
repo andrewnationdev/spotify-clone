@@ -20,7 +20,11 @@
 
 .player-center-area {}
 
-.player-right-area {}
+.player-right-area {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
 
 .buttons-container {
     display: flex;
@@ -34,6 +38,17 @@
 }
 
 .button-icon-large:hover > i {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.button-icon-smaller {
+    font-size: 1.50rem;
+    color: var(--textgrey);
+    cursor: pointer;
+}
+
+.button-icon-smaller {
     color: var(--primary);
 }
 

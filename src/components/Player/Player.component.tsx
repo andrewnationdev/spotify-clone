@@ -48,7 +48,12 @@ export default function PlayerComponent() {
                     }}>02:40</span>
                 </div>
             </div>
-            <div className="player-right-area"></div>
+            <div className="player-right-area">
+                <ButtonIconComponent icon={"art_track"} smaller/>
+                <ButtonIconComponent icon={"important_devices"} smaller/>
+                <ButtonIconComponent icon={"volume_up"} smaller isVolumeButton/>
+                <ButtonIconComponent icon={"picture_in_picture"} smaller/>
+            </div>
         </div>
     );
 }
