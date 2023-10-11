@@ -39,9 +39,13 @@ export default function PlayerComponent() {
                     />
                 </div>
                 <div className="playback-container">
-                    <span>00:00</span>
-                    <input type="range"></input>
-                    <span>02:40</span>
+                    <span style={{
+                        fontSize: 12
+                    }}>00:00</span>
+                    <input type="range" className="playbrack-track"/>
+                    <span fontSize={{
+                        fontSize: 12
+                    }}>02:40</span>
                 </div>
             </div>
             <div className="player-right-area"></div>
