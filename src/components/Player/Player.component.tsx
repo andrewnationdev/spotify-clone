@@ -68,6 +68,17 @@ export default function PlayerComponent() {
                         />
                     </div>
 
+                    <div style={{
+                        width: '402px',
+                        height: '4px',
+                        backgroundColor: '#212121'
+                    }}>
+                        <div style={{
+                            width: '50%',
+                            backgroundColor: '#fff'
+                        }}></div>
+                    </div>
+
                     <span style={{
                         fontSize: 12
                     }}>{convertSecondsToMinutes(200)}</span>
