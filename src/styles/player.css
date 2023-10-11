@@ -24,11 +24,13 @@
 
 .buttons-container {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .button-icon-large > i {
     color: var(--textgrey);
-    font-size: 2rem;
+    font-size: 1.85rem;
 }
 
 .button-icon-large:hover > i {
@@ -38,6 +40,11 @@
 .play-button-white > i {
     color: var(--primary) !important;
     font-size: 2.25rem !important;
+}
+
+.play-button-white:hover > i {
+    color: var(--primary) !important;
+    font-size: 2.40rem !important;
 }
 
 .playback-container {
