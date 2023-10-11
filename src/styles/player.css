@@ -13,7 +13,7 @@
 
 .player-music-name {
     color: var(--primary);
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .player-music-name:hover {
