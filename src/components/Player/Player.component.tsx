@@ -43,7 +43,7 @@ export default function PlayerComponent() {
                         fontSize: 12
                     }}>00:00</span>
                     <input type="range" className="playbrack-track"/>
-                    <span fontSize={{
+                    <span style={{
                         fontSize: 12
                     }}>02:40</span>
                 </div>
