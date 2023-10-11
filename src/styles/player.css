@@ -16,7 +16,7 @@
 .player-left-area {
     display: flex;
     align-items: center;
-    margin-right: auto;
+
 }
 
 .player-center-area {}
@@ -30,7 +30,7 @@
 .buttons-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .button-icon-large > i {
@@ -44,12 +44,12 @@
 }
 
 .button-icon-smaller {
-    font-size: 1.50rem;
+    font-size: 1.25rem;
     color: var(--textgrey) !important;
     cursor: pointer;
 }
 
-.button-icon-smaller {
+.button-icon-smaller:hover {
     color: var(--primary) !important;
 }
 
