@@ -38,7 +38,7 @@ export default function PlayerComponent() {
                         icon={"repeat"}
                     />
                 </div>
-                <div>
+                <div className="playback-container">
                     <span>00:00</span>
                     <input type="range"></input>
                     <span>02:40</span>
