@@ -8,9 +8,13 @@
     width: 56px;
 }
 
-.player-music-name {}
+.player-music-name {
+    color: var(--textgrey);
+}
 
-.player-music-singer {}
+.player-music-singer {
+    color: var(--primary);
+}
 
 .player-left-area {
     display: flex;
