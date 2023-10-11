@@ -13,7 +13,7 @@ export default function ButtonIconComponent(props: {
             `}>
             <i className="material-icons">{props.icon}</i>
             {props?.isVolumeButton && <>
-                <i clasName="material-icons">{props.icon}</i>
+                <i className="material-icons">{props.icon}</i>
                 <input type="range" name="" id="" />
             </>}
         </div>
