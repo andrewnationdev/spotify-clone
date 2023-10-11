@@ -12,8 +12,11 @@
 
 .player-music-name {
     color: var(--primary);
-font-size: 14px;
-text-decoration: underline;
+    font-size: 14px;
+}
+
+.player-music-name:hover {
+    text-decoration: underline;
 }
 
 .player-music-singer {
@@ -78,15 +81,22 @@ text-decoration: underline;
 
 .playback-track {
     -webkit-appearance: none;
-    background-color: silver;
+    background-color: var(--green);
     width: 200px;
     height:20px;
 }
 
-.playback-track::-webkit-slider-thumb {
+.volume-track {
+    -webkit-appearance: none;
+    background-color: var(--green);
+    width: 200px;
+    height:20px;
+}
+
+/*.playback-track::-webkit-slider-thumb {
     -webkit-appearance: none;
     background-color: var(--green);
     opacity: 0.5;
     width: 10px;
     height: 26px;
-}
+}*/

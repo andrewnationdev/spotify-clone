@@ -18,7 +18,7 @@ export default function ButtonIconComponent(props: {
             `}>
             {props?.isVolumeButton ? <>
                 <i className="material-icons">{props?.icon}</i>
-                <input type="range" className="playback-track volume-track" name="" id="" />
+                <input type="range" className="volume-track" name="" id="" />
             </> : <i className="material-icons">{props?.icon}</i>}
         </div>
     )
