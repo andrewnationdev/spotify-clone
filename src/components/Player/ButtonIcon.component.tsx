@@ -11,13 +11,13 @@ export default function ButtonIconComponent(props: {
 
     const getIconFromVolume = (volume: number) => {
         if(volume == 0){
-            return 'volume_off'
+            return <i className="material-icons">volume_mute</i>
         } else if(volume > 0 && volume < 25){
-            return 'volume_down'
+            return <i className="material-icons">volume_off</i>
         } else if(volume > 25 && volume < 75){
-            return 'volume_down'
+            return <i className="material-icons">volume_on</i>
         } else if(volume > 75){
-            return 'volume_on'
+            return <i className="material-icons">volume_up</i>
         }
     }
 
@@ -26,8 +26,12 @@ export default function ButtonIconComponent(props: {
                 ${props?.smaller ? 'button-icon-smaller' : 'button-icon-large'}
                 ${props?.isPlayButton ? 'play-button-white' : ''}
             `}>
-            {props?.isVolumeButton ? <>
-                <i className="material-icons">{getIconFromVolume(volume)}</i>
+            {props?.isVolumeButton ? <div style={{
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center'
+            }}>
+                
                 
                 <div className="track-progressbar volume-bar">
                         <div style={{
