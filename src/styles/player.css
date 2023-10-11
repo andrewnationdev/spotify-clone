@@ -2,6 +2,7 @@
     height: 56px;
     padding: 6px;
     display: flex;
+    justify-content: space-between;
 }
 
 .player-cover-picture {
@@ -44,12 +45,12 @@
 
 .button-icon-smaller {
     font-size: 1.50rem;
-    color: var(--textgrey);
+    color: var(--textgrey) !important;
     cursor: pointer;
 }
 
 .button-icon-smaller {
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 
 .play-button-white > i {

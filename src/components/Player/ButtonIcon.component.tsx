@@ -11,11 +11,10 @@ export default function ButtonIconComponent(props: {
                 ${props?.smaller ? 'button-icon-smaller' : 'button-icon-large'}
                 ${props?.isPlayButton ? 'play-button-white' : ''}
             `}>
-            <i className="material-icons">{props.icon}</i>
-            {props?.isVolumeButton && <>
+            {props?.isVolumeButton ? <>
                 <i className="material-icons">{props.icon}</i>
                 <input type="range" name="" id="" />
-            </>}
+            </> : <i className="material-icons">{props.icon}</i>}
         </div>
     )
 }
