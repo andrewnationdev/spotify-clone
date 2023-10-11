@@ -12,6 +12,7 @@
 .player-music-name {
     color: var(--textgrey);
 font-size: 14px;
+text-decoration: underline;
 }
 
 .player-music-singer {
