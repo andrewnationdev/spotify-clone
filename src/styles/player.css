@@ -43,13 +43,13 @@
     cursor: pointer;
 }
 
-.button-icon-smaller {
+.button-icon-smaller > i {
     font-size: 1rem;
     color: var(--textgrey) !important;
     cursor: pointer;
 }
 
-.button-icon-smaller:hover {
+.button-icon-smaller:hover > i {
     color: var(--primary) !important;
 }
 
