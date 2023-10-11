@@ -3,6 +3,7 @@
     padding: 6px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .player-cover-picture {
@@ -40,6 +41,7 @@
     display: flex;
     gap: 8px;
     align-items: center;
+    padding-right: 8px;
 }
 
 .buttons-container {
