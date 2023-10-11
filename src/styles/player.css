@@ -11,13 +11,13 @@
 }
 
 .player-music-name {
-    color: var(--textgrey);
+    color: var(--primary);
 font-size: 14px;
 text-decoration: underline;
 }
 
 .player-music-singer {
-    color: var(--primary);
+    color: var(--textgrey);
     font-size: 12px;
 }
 
