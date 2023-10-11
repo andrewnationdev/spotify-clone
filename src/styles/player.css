@@ -41,7 +41,7 @@
 .buttons-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .button-icon-large > i {
@@ -55,7 +55,7 @@
 }
 
 .button-icon-smaller > i {
-    font-size: 1.25rem;
+    font-size: 1.40rem;
     color: var(--textgrey) !important;
     cursor: pointer;
 }
@@ -82,4 +82,8 @@
 
   .track-progressbar {
 
+  }
+
+  .volume-bar {
+    width: 53px !important;
   }

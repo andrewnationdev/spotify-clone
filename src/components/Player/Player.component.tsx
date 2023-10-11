@@ -61,7 +61,7 @@ export default function PlayerComponent() {
                         <div style={{
                             width: '75%',
                             backgroundColor: '#fff',
-
+                            height: '5px'
                         }}></div>
                     </div>
 
