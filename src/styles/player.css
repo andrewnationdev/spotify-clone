@@ -4,7 +4,9 @@
     display: flex;
 }
 
-.player-cover-picture {}
+.player-cover-picture {
+
+}
 
 .player-music-name {}
 
@@ -12,6 +14,8 @@
 
 .player-left-area {
     display: flex;
+    align-items: center;
+    margin-right: auto;
 }
 
 .player-center-area {}
@@ -34,4 +38,10 @@
 .play-button-white > i {
     color: var(--primary) !important;
     font-size: 2.25rem !important;
+}
+
+.playback-container {
+    color: var(--textgrey);
+    display: flex;
+    flex-direction: row;
 }
