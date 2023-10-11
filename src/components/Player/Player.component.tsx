@@ -7,9 +7,20 @@ interface IPlayer {
     singer: string;
     title: string;
     isFavorite: boolean;
+    length?: number;
 }
 
 export default function PlayerComponent() {
+    const [progress, setProgress] = useState<number>(0);
+
+    const convertSecondsToMinutes = (second: number) => {
+        const minutes = Math.floor(second / 60);
+        const remainingSecond = second % 60;
+        const timeString = `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+
+        return timeString;
+    }
+
     return (
         <div className="player-container">
             <div className="player-left-area">
@@ -41,11 +52,19 @@ export default function PlayerComponent() {
                 <div className="playback-container">
                     <span style={{
                         fontSize: 12
-                    }}>00:00</span>
-                    <input type="range" className="playbrack-track"/>
+                    }}>
+                        {convertSecondsToMinutes(progress)}
+                    </span>
+                    <input type="range" className="playbrack-track"
+                        min={0}
+                        max={200}
+                        onChange={(e) => setProgress(e?.target?.value)}
+                        step={1}
+                        value={progress}
+                    />
                     <span style={{
                         fontSize: 12
-                    }}>02:40</span>
+                    }}>{convertSecondsToMinutes(200)}</span>
                 </div>
             </div>
             <div className="player-right-area">

@@ -6,11 +6,6 @@ export default function ButtonIconComponent(props: {
     smaller?: boolean,
     isVolumeButton?: boolean
 }) {
-
-    const convertSecondsToMinutes = () => {
-
-    }
-
     return (
         <div className={`
                 ${props?.smaller ? 'button-icon-smaller' : 'button-icon-large'}
