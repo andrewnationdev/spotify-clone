@@ -9,9 +9,15 @@
     width: 56px;
 }
 
-.player-music-name {}
+.player-music-name {
+    color: var(--textgrey);
+font-size: 14px;
+}
 
-.player-music-singer {}
+.player-music-singer {
+    color: var(--primary);
+    font-size: 12px;
+}
 
 .player-left-area {
     display: flex;
