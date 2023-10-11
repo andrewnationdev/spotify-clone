@@ -83,14 +83,14 @@
 .playback-track {
     -webkit-appearance: none;
     background-color: var(--white);
-    width: 402px;
+    width: 402px !important;
     height:4px;
 }
 
 .volume-track {
     -webkit-appearance: none;
     background-color: var(--white);
-    width: 53px;
+    width: 53px !important;
     height:4px;
 }
 
