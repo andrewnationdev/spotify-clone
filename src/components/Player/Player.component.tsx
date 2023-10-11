@@ -59,7 +59,7 @@ export default function PlayerComponent() {
                     <input type="range" className="playbrack-track"
                         min={0}
                         max={200}
-                        onChange={(e) => setProgress(e?.target?.value)}
+                        onChange={(e) => setProgress(Number(e?.target?.value))}
                         step={1}
                         value={progress}
                     />
