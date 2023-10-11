@@ -12,13 +12,13 @@ export default function ButtonIconComponent(props: {
 
     const getIconFromVolume = (volume: number) => {
         if (volume == 0) {
-            return <i className={`bi bi-volume-mute button-icon-smaller`}></i>
+            return <i className={`bi bi-volume-mute`}></i>
         } else if (volume > 0 && volume < 25) {
-            return <i className={`bi bi-volume-off button-icon-smaller`}></i>
+            return <i className={`bi bi-volume-off`}></i>
         } else if (volume > 25 && volume < 75) {
-            return <i className={`bi bi-volume-down button-icon-smaller`}></i>
+            return <i className={`bi bi-volume-down`}></i>
         } else if (volume > 75) {
-            return <i className={`bi bi-volume-up button-icon-smaller`}></i>
+            return <i className={`bi bi-volume-up`}></i>
         }
     }
 
@@ -31,7 +31,7 @@ export default function ButtonIconComponent(props: {
                 display: 'flex',
                 flexDirection: 'row',
                 alignItems: 'center'
-            }}>
+            }} className={"button-icon-smaller"}>
                 {getIconFromVolume(volume)}
                 <div className="track-progressbar volume-bar">
                     <div style={{
