@@ -7,6 +7,7 @@
 
 .player-cover-picture {
     width: 56px;
+    border-radius: 8px;
 }
 
 .player-music-name {
