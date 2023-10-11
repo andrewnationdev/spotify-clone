@@ -10,10 +10,12 @@
 
 .player-music-name {
     color: var(--textgrey);
+font-size: 14px;
 }
 
 .player-music-singer {
     color: var(--primary);
+    font-size: 12px;
 }
 
 .player-left-area {
