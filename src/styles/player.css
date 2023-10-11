@@ -81,16 +81,16 @@
 
 .playback-track {
     -webkit-appearance: none;
-    background-color: var(--green);
-    width: 200px;
-    height:20px;
+    background-color: var(--white);
+    width: 402px;
+    height:4px;
 }
 
 .volume-track {
     -webkit-appearance: none;
-    background-color: var(--green);
-    width: 200px;
-    height:20px;
+    background-color: var(--white);
+    width: 53px;
+    height:4px;
 }
 
 /*.playback-track::-webkit-slider-thumb {
