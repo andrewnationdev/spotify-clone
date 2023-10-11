@@ -30,7 +30,11 @@
     padding: 8px;
 }
 
-.player-center-area {}
+.player-center-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .player-right-area {
     display: flex;
@@ -78,6 +82,7 @@
     color: var(--textgrey);
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .track-progressbar {
