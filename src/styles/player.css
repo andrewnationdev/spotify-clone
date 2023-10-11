@@ -27,6 +27,7 @@
 .player-left-area {
     display: flex;
     align-items: center;
+    padding: 8px;
 }
 
 .player-center-area {}
