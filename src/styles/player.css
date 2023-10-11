@@ -82,16 +82,16 @@
 
 .playback-track {
     -webkit-appearance: none;
-    background-color: var(--white);
+    background-color: var(--white) !important;
     width: 402px !important;
-    height:4px;
+    height: 4px !important;
 }
 
 .volume-track {
     -webkit-appearance: none;
-    background-color: var(--white);
+    background-color: var(--white) !important;
     width: 53px !important;
-    height:4px;
+    height: 4px !important;
 }
 
 /*.playback-track::-webkit-slider-thumb {
@@ -104,7 +104,7 @@
 
 .playback-track:hover {
     -webkit-appearance: none;
-    background-color: var(--green);
+    background-color: var(--green) !important;
 }
 
 .volume-track:hover {
