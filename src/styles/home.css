@@ -41,6 +41,7 @@
     background-color: #282828;
 }
 
+
 .section-card-main:hover > .card-play-button {
     font-size: 3rem;
     color: var(--green);
@@ -71,11 +72,11 @@
 .section-card-title {
     color: var(--primary);
     font-weight: 600;
-    font-size: 0.95;
+    font-size: 0.95rem;
 }
 
 .section-card-description {
     color: var(--textgrey);
-    font-size: 0.80;
+    font-size: 0.80rem;
     font-weight: 600;
 }
