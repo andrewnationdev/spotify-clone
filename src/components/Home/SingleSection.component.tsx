@@ -17,7 +17,9 @@ export default function SingleSectionComponent(props: {
                 <span className="section-show-more">Mostrar mais</span>
             </div>
             <div className="section-cards">
-                <SectionCardComponent data={props?.data[0]} />
+                {props?.data.map((item) => 
+                    <SectionCardComponent data={item} />
+                )}
             </div>
         </section>
     )

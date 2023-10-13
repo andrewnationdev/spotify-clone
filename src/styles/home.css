@@ -4,7 +4,11 @@
     padding: 8px;
 }
 
-.section-cards {}
+.section-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
 
 .section-header {
     display: flex;
