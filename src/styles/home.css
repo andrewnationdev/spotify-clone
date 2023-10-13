@@ -5,7 +5,12 @@
 
 .section-cards {}
 
-.section-header {}
+.section-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
 
 .section-show-more {}
 
@@ -22,11 +27,21 @@
     flex-direction: column;
 }
 
+.section-card-container :hover {
+    background-color: var(--lightergrey);
+}
+
+.section-card-container :hover > .card-play-button {
+    font-size: 2rem;
+    color: var(--green);
+    visibility: visible;
+}
 .section-card-main {}
 
 .section-card-picture {
     border-radius: 8px;
     width: 160px;
+    margin-top: 1rem;
 }
 
 .section-card-info {
@@ -34,7 +49,11 @@
     flex-direction: column;
 }
 
-.card-play-button {}
+.card-play-button {
+    font-size: 2rem;
+    color: var(--green);
+    visibility: visible;
+}
 
 .section-card-title {
     color: var(--primary);
