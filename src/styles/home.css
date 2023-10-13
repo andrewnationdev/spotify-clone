@@ -7,7 +7,8 @@
 .section-cards {
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .section-header {
@@ -30,6 +31,7 @@
 .home-page-v {
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 .section-card-container {
