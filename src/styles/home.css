@@ -41,11 +41,12 @@
     background-color: #282828;
 }
 
-.section-card-container:hover > .card-play-button {
+.section-card-main:hover > .card-play-button {
     font-size: 3rem;
     color: var(--green);
     visibility: visible;
 }
+
 .section-card-main {}
 
 .section-card-picture {
