@@ -190,25 +190,25 @@ export const userMock = {
         title: "Estações de rádio populares",
         data: [
             {
-                cover: "",
+                cover: "https://i.pinimg.com/originals/33/db/d4/33dbd44fb150849efacc004eff6e0ce5.jpg",
                 title: "Pop Hits",
                 description: "Os maiores sucessos do pop",
                 isArtistCard: false,
             },
             {
-                cover: "",
+                cover: "https://4.bp.blogspot.com/-MX2jZnXXTDU/ToZB6MPyy5I/AAAAAAAABRU/vIbdbt5tE5E/s1600/radio+pop+hits+2011+%2528frente%2529.jpg",
                 title: "Rock Classics",
                 description: "Os clássicos do rock",
                 isArtistCard: false,
             },
             {
-                cover: "",
+                cover: "https://th.bing.com/th/id/OIP.5qYQFpwNF8_2R1PuFjcdggHaHD?pid=ImgDet&w=599&h=571&rs=1",
                 title: "Hip Hop Now",
                 description: "O melhor do hip hop atual",
                 isArtistCard: false,
             },
             {
-                cover: "",
+                cover: "https://th.bing.com/th/id/R.4acb39dd9f75cef0d8df9befe3757705?rik=8JQLgyu9cvqQQw&riu=http%3a%2f%2fwww.metalmusicarchives.com%2fimages%2fcovers%2fmudvayne-world-so-cold(single)-20141214162229.jpg&ehk=%2b%2b2qTx%2f6juTWOMbuh325PzFCgqlK2r%2fFU%2fDVownl7zw%3d&risl=&pid=ImgRaw&r=0",
                 title: "Latin Hits",
                 description: "Os maiores sucessos latinos",
                 isArtistCard: false,
