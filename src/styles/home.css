@@ -33,12 +33,13 @@
     flex-direction: column;
 }
 
-.section-card-container:hover {
-    background-color: var(--lightergrey);
+.section-card-container:hover{
+    background-color: #282828;
+
 }
 
 .section-card-container:hover > .card-play-button {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--green);
     visibility: visible;
 }
