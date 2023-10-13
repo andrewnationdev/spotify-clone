@@ -185,6 +185,35 @@ export const userMock = {
                 isArtistCard: false,
             },
         ]
+    },
+    {
+        title: "Estações de rádio populares",
+        data: [
+            {
+                cover: "",
+                title: "Pop Hits",
+                description: "Os maiores sucessos do pop",
+                isArtistCard: false,
+            },
+            {
+                cover: "",
+                title: "Rock Classics",
+                description: "Os clássicos do rock",
+                isArtistCard: false,
+            },
+            {
+                cover: "",
+                title: "Hip Hop Now",
+                description: "O melhor do hip hop atual",
+                isArtistCard: false,
+            },
+            {
+                cover: "",
+                title: "Latin Hits",
+                description: "Os maiores sucessos latinos",
+                isArtistCard: false,
+            },
+        ]
     }
     ]
 } as {
