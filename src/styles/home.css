@@ -41,6 +41,7 @@
     padding: 0px 16px 16px 16px;
     display: flex;
     flex-direction: column;
+    height: 222px;
 }
 
 .section-card-container:hover{
@@ -68,12 +69,16 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5;
+    margin-top: -2,5;
 }
 
 .card-play-button {
     font-size: 3rem;
     color: var(--green);
     visibility: collapse;
+    position: relative;
+    bottom: 23%;
+    left: 33%;
 }
 
 .section-card-title {
