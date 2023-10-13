@@ -103,12 +103,30 @@ export const userMock = {
         title: 'Tocados recentemente',
         data: [
             {
-                cover: 'https://1734811051.rsc.cdn77.org/data/images/full/359628/sea-of-thieves-logo.jpg',
-                title: 'Título do card',
-                description: 'Descrição do card',
-                isArtistCard: false
+              cover: '',
+              title: 'Bohemian Rhapsody',
+              description: 'Queen',
+              isArtistCard: false
+            },
+            {
+              cover: '',
+              title: 'Imagine',
+              description: 'John Lennon',
+              isArtistCard: false
+            },
+            {
+              cover: '',
+              title: 'Hotel California',
+              description: 'Eagles',
+              isArtistCard: false
+            },
+            {
+              cover: '',
+              title: 'Billie Jean',
+              description: 'Michael Jackson',
+              isArtistCard: false
             }
-        ]
+          ]
     }]
 } as {
     name: string;
