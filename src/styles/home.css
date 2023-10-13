@@ -34,6 +34,11 @@
     margin-top: 1rem;
 }
 
+.main-page-section {
+    max-height: calc(100vh - 30%);
+    overflow-y: scroll;
+}
+
 .section-card-container {
     width: 160px;
     border-radius: 8px;

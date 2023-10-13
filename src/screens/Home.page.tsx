@@ -22,8 +22,8 @@ export default function HomeScreen() {
                     <AvatarCircleComponent avatarURL={userMock.avatar}/>
                 </div>
             </header>
-            <div>
-                <SectionsComponent></SectionsComponent>
+            <div className="main-page-section">
+                <SectionsComponent/>
             </div>
         </div>
     );
