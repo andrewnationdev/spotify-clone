@@ -16,6 +16,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: var(--black);
+    scrollbar-color: #00ff00;
+    scrollbar-thumb-color: #ff0000;
 }
 
 * {
