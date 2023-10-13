@@ -1,6 +1,7 @@
 .section-container{
     display: flex;
     flex-direction: column;
+    padding: 8px;
 }
 
 .section-cards {}
@@ -22,7 +23,10 @@
     font-weight: 700;
 }
 
-.home-page-v {}
+.home-page-v {
+    display: flex;
+    flex-direction: column;
+}
 
 .section-card-container {
     width: 160px;
@@ -35,7 +39,6 @@
 
 .section-card-container:hover{
     background-color: #282828;
-
 }
 
 .section-card-container:hover > .card-play-button {
@@ -57,7 +60,7 @@
 }
 
 .card-play-button {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--green);
     visibility: visible;
 }
