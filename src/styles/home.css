@@ -62,7 +62,7 @@
 .card-play-button {
     font-size: 3rem;
     color: var(--green);
-    visibility: visible;
+    visibility: collapse;
 }
 
 .section-card-title {
