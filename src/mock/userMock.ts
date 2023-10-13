@@ -104,7 +104,7 @@ export const userMock = {
         data: [
             {
               cover: 'https://1734811051.rsc.cdn77.org/data/images/full/359628/sea-of-thieves-logo.jpg',
-              title: 'Bohemian Rhapsody',
+              title: 'Bohemian Rhap...',
               description: 'Queen',
               isArtistCard: false
             },
