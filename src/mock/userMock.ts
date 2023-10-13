@@ -214,6 +214,35 @@ export const userMock = {
                 isArtistCard: false,
             },
         ]
+    },
+    {
+        title: 'Episódios de podcast',
+        data: [
+            {
+                title: "The Daily",
+                description: "Um resumo dos principais acontecimentos do dia",
+                cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/The_Daily_logo.svg/1200px-The_Daily_logo.svg.png",
+                isArtistCard: false,
+            },
+            {
+                title: "99% Invisible",
+                description: "Um podcast sobre design, arquitetura e cultura",
+                cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/99pi_logo.svg/1200px-99pi_logo.svg.png",
+                isArtistCard: false,
+            },
+            {
+                title: "Serial",
+                description: "Um podcast de investigação jornalística",
+                cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Serial_logo.svg/1200px-Serial_logo.svg.png",
+                isArtistCard: false,
+            },
+            {
+                title: "This American Life",
+                description: "Um podcast de histórias reais",
+                cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/This_American_Life_logo.svg/1200px-This_American_Life_logo.svg.png",
+                isArtistCard: false,
+            },
+        ]
     }
     ]
 } as {
