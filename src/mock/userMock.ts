@@ -132,25 +132,25 @@ export const userMock = {
         title: 'Seus mixes mais ouvidos',
         data: [
             {
-                cover: "",
+                cover: "https://th.bing.com/th/id/OIP.W19xwCQiBIPMxIinNXfp4QHaEK?pid=ImgDet&rs=1",
                 title: "Imagine",
                 description: "John Lennon",
                 isArtistCard: false,
             },
             {
-                cover: "",
+                cover: "https://www.slashgear.com/wp-content/uploads/2017/09/Red-Dead-Redemption-2-fire-955x620.jpg",
                 title: "Hey Jude",
                 description: "The Beatles",
                 isArtistCard: false,
             },
             {
-                cover: "",
+                cover: "https://th.bing.com/th/id/OIP.WOPyTWkkh-_n4gxfGFhAOgHaHa?pid=ImgDet&rs=1",
                 title: "Dancing Queen",
                 description: "ABBA",
                 isArtistCard: false,
             },
             {
-                cover: "",
+                cover: "https://th.bing.com/th/id/OIP.KE2MWtM7o1kHxXrUKuRmAgHaE8?pid=ImgDet&rs=1",
                 title: "I Will Survive",
                 description: "Gloria Gaynor",
                 isArtistCard: false,
@@ -161,25 +161,25 @@ export const userMock = {
         title: 'Feitos para GHT',
         data: [
             {
-                cover: "",
+                cover: "https://meups.com.br/wp-content/uploads/2022/11/Atomic-Heart-3-900x503.jpg",
                 title: "Aquarela",
                 description: "Toquinho",
                 isArtistCard: false,
             },
             {
-                cover: "",
+                cover: "https://th.bing.com/th/id/R.ee82f4fb9f9cff96317a892b7d531323?rik=0%2fdh%2fBqHU964bg&pid=ImgRaw&r=0",
                 title: "O Trem das Onze",
                 description: "Luiz Gonzaga",
                 isArtistCard: false,
             },
             {
-                cover: "",
+                cover: "https://th.bing.com/th/id/OIP.ToZ3nqwxFRTZ1Ng-Ha-UvQHaEK?pid=ImgDet&rs=1",
                 title: "Samba da Benção",
                 description: "Vital e Zé Canuto",
                 isArtistCard: false,
             },
             {
-                cover: "",
+                cover: "https://wallpapercave.com/wp/wp6359369.jpg",
                 title: "Garota de Ipanema",
                 description: "Tom Jobim e Vinicius de Moraes",
                 isArtistCard: false,
