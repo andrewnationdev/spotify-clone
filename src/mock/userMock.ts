@@ -221,25 +221,25 @@ export const userMock = {
             {
                 title: "The Daily",
                 description: "Um resumo dos principais acontecimentos do dia",
-                cover: "",
+                cover: "https://images-na.ssl-images-amazon.com/images/I/71PRTHsAxpL._SL1200_.jpg",
                 isArtistCard: false,
             },
             {
                 title: "99% Invisible",
                 description: "Um podcast sobre design, arquitetura e cultura",
-                cover: "",
+                cover: "https://a-static.mlcdn.com.br/800x560/cd-ramones-mondo-bizarro-emi/maiadiscdistribuidoracdsdvs/15899540524/f71e6d737824d66b3c2a9719972f6a6c.jpg",
                 isArtistCard: false,
             },
             {
                 title: "Serial",
                 description: "Um podcast de investigação jornalística",
-                cover: "",
+                cover: "https://i.ebayimg.com/images/g/pjMAAOSwGpxfKUq1/s-l400.jpg",
                 isArtistCard: false,
             },
             {
                 title: "This American Life",
                 description: "Um podcast de histórias reais",
-                cover: "",
+                cover: "https://th.bing.com/th/id/OIP.sdEAg9VqvlzGAqt6NILDNwHaHb?pid=ImgDet&w=946&h=948&rs=1",
                 isArtistCard: false,
             },
         ]
@@ -249,25 +249,25 @@ export const userMock = {
             {
                 title: "Para começar o dia",
                 description: "A melhor música para acordar e começar o dia",
-                cover: "",
+                cover: "ttps://th.bing.com/th/id/R.e6f1bea9ed7581534461aae6fc881cf5?rik=63bRhNt2tvlCKg&riu=http%3a%2f%2fwww.tokyomusicjapan.com%2fauction%2fGaryLiveBluesLD.JPG&ehk=LqtTX5EOw%2bq9ffFRStEHC7a8fTsxBhek60CXHhJ9URE%3d&risl=&pid=ImgRaw&r=0",
                 isArtistCard: false,
             },
             {
                 title: "Para trabalhar",
                 description: "Música instrumental para ajudar você a se concentrar",
-                cover: "",
+                cover: "https://i.pinimg.com/originals/83/6b/a6/836ba6756fca6cb923f4c225197b0d32.jpg",
                 isArtistCard: false,
             },
             {
                 title: "Para relaxar",
                 description: "Música tranquila para ajudar você a relaxar e se desligar",
-                cover: "",
+                cover: "https://img.discogs.com/x7pw5-cdALwN66i-j912yPel-rg=/fit-in/546x480/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12012012-1526539837-1253.jpeg.jpg",
                 isArtistCard: false,
             },
             {
                 title: "Para dançar",
                 description: "A melhor música para dançar e se divertir",
-                cover: "",
+                cover: "https://th.bing.com/th/id/OIP.WDY95trk3Ib2_0o_4R0mDQAAAA?pid=ImgDet&w=359&h=360&rs=1",
                 isArtistCard: false,
             },
         ]
