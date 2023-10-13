@@ -109,19 +109,19 @@ export const userMock = {
               isArtistCard: false
             },
             {
-              cover: 'https://discord.com/channels/1134889355635343520/1135044211419385997/1162459934361931797',
+              cover: 'https://th.bing.com/th/id/R.6c2ec53d153c55dd2562b454b938fe2f?rik=N%2bBtv4RzQSyOoQ&pid=ImgRaw&r=0',
               title: 'Imagine',
               description: 'John Lennon',
               isArtistCard: false
             },
             {
-              cover: '',
+              cover: 'https://yt3.ggpht.com/-QkqvzArFkYs/AAAAAAAAAAI/AAAAAAAAAAA/qw97foQDUbQ/s900-c-k-no/photo.jpg',
               title: 'Hotel California',
               description: 'Eagles',
               isArtistCard: false
             },
             {
-              cover: '',
+              cover: 'https://th.bing.com/th/id/OIP.yYJC2UM3cB8jbgYHxs83IgHaFj?pid=ImgDet&rs=1',
               title: 'Billie Jean',
               description: 'Michael Jackson',
               isArtistCard: false
