@@ -12,9 +12,15 @@
     justify-content: space-between;
 }
 
-.section-show-more {}
+.section-show-more {
+    color: var(--textgrey);
+}
 
-.section-title {}
+.section-title {
+    color: var(--primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
 
 .home-page-v {}
 
@@ -27,11 +33,11 @@
     flex-direction: column;
 }
 
-.section-card-container :hover {
+.section-card-container:hover {
     background-color: var(--lightergrey);
 }
 
-.section-card-container :hover > .card-play-button {
+.section-card-container:hover > .card-play-button {
     font-size: 2rem;
     color: var(--green);
     visibility: visible;
