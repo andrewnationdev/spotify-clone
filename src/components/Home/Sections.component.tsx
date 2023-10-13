@@ -5,7 +5,7 @@ import {userMock} from '../../mock/userMock';
 export default function SectionsComponent(){
     return(
         <div className="home-page-v">
-            <SingleSectionComponent data={userMock?.section}/>
+            <SingleSectionComponent data={userMock?.section[0]}/>
         </div>
     )
 }
