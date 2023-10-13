@@ -5,10 +5,10 @@ import { userMock } from '../../mock/userMock';
 export default function SectionsComponent() {
     return (
         <div className="home-page-v">
-            <SingleSectionComponent 
-                title={userMock?.sections[0]?.title} 
-                data={userMock?.sections[0]?.data} 
-            />
+            {userMock?.sections?.map((section) => <SingleSectionComponent
+                title={section?.title}
+                data={section?.data}
+            />)}
         </div>
     )
 }
