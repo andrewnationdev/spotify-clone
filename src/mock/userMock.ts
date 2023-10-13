@@ -103,13 +103,13 @@ export const userMock = {
         title: 'Tocados recentemente',
         data: [
             {
-              cover: '',
+              cover: 'https://1734811051.rsc.cdn77.org/data/images/full/359628/sea-of-thieves-logo.jpg',
               title: 'Bohemian Rhapsody',
               description: 'Queen',
               isArtistCard: false
             },
             {
-              cover: '',
+              cover: 'https://discord.com/channels/1134889355635343520/1135044211419385997/1162459934361931797',
               title: 'Imagine',
               description: 'John Lennon',
               isArtistCard: false
