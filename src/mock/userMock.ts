@@ -103,31 +103,90 @@ export const userMock = {
         title: 'Tocados recentemente',
         data: [
             {
-              cover: 'https://1734811051.rsc.cdn77.org/data/images/full/359628/sea-of-thieves-logo.jpg',
-              title: 'Bohemian Rhap...',
-              description: 'Queen',
-              isArtistCard: false
+                cover: 'https://1734811051.rsc.cdn77.org/data/images/full/359628/sea-of-thieves-logo.jpg',
+                title: 'Bohemian Rhap...',
+                description: 'Queen',
+                isArtistCard: false
             },
             {
-              cover: 'https://th.bing.com/th/id/R.6c2ec53d153c55dd2562b454b938fe2f?rik=N%2bBtv4RzQSyOoQ&pid=ImgRaw&r=0',
-              title: 'Imagine',
-              description: 'John Lennon',
-              isArtistCard: false
+                cover: 'https://th.bing.com/th/id/R.6c2ec53d153c55dd2562b454b938fe2f?rik=N%2bBtv4RzQSyOoQ&pid=ImgRaw&r=0',
+                title: 'Imagine',
+                description: 'John Lennon',
+                isArtistCard: false
             },
             {
-              cover: 'https://yt3.ggpht.com/-QkqvzArFkYs/AAAAAAAAAAI/AAAAAAAAAAA/qw97foQDUbQ/s900-c-k-no/photo.jpg',
-              title: 'Hotel California',
-              description: 'Eagles',
-              isArtistCard: false
+                cover: 'https://yt3.ggpht.com/-QkqvzArFkYs/AAAAAAAAAAI/AAAAAAAAAAA/qw97foQDUbQ/s900-c-k-no/photo.jpg',
+                title: 'Hotel California',
+                description: 'Eagles',
+                isArtistCard: false
             },
             {
-              cover: 'https://th.bing.com/th/id/OIP.yYJC2UM3cB8jbgYHxs83IgHaFj?pid=ImgDet&rs=1',
-              title: 'Billie Jean',
-              description: 'Michael Jackson',
-              isArtistCard: false
+                cover: 'https://th.bing.com/th/id/OIP.yYJC2UM3cB8jbgYHxs83IgHaFj?pid=ImgDet&rs=1',
+                title: 'Billie Jean',
+                description: 'Michael Jackson',
+                isArtistCard: false
             }
-          ]
-    }]
+        ]
+    },
+    {
+        title: 'Seus mixes mais ouvidos',
+        data: [
+            {
+                cover: "",
+                title: "Imagine",
+                description: "John Lennon",
+                isArtistCard: false,
+            },
+            {
+                cover: "",
+                title: "Hey Jude",
+                description: "The Beatles",
+                isArtistCard: false,
+            },
+            {
+                cover: "",
+                title: "Dancing Queen",
+                description: "ABBA",
+                isArtistCard: false,
+            },
+            {
+                cover: "",
+                title: "I Will Survive",
+                description: "Gloria Gaynor",
+                isArtistCard: false,
+            },
+        ]
+    },
+    {
+        title: 'Feitos para GHT',
+        data: [
+            {
+                cover: "",
+                title: "Aquarela",
+                description: "Toquinho",
+                isArtistCard: false,
+            },
+            {
+                cover: "",
+                title: "O Trem das Onze",
+                description: "Luiz Gonzaga",
+                isArtistCard: false,
+            },
+            {
+                cover: "",
+                title: "Samba da Benção",
+                description: "Vital e Zé Canuto",
+                isArtistCard: false,
+            },
+            {
+                cover: "",
+                title: "Garota de Ipanema",
+                description: "Tom Jobim e Vinicius de Moraes",
+                isArtistCard: false,
+            },
+        ]
+    }
+    ]
 } as {
     name: string;
     avatar: string;

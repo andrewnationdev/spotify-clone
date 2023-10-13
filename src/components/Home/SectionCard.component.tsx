@@ -8,6 +8,18 @@ export default function SectionCardComponent(props: {
         description: string;
     }
 }) {
+
+    const titleLimit = 14;
+    const descriptionLimit = 25;
+
+    function truncateText(text, limit) {
+        if (text.length > limit) {
+            return text.substring(0, limit) + '...';
+        }
+        return text;
+    }
+
+
     return (
         <div className="section-card-container">
             <div className="section-card-main">
@@ -15,8 +27,13 @@ export default function SectionCardComponent(props: {
                 <i className="material-icons card-play-button">play_circle_filled</i>
             </div>
             <div className="section-card-info">
-                <span className="section-card-title">{props?.data?.title}</span>
-                <span className="section-card-description">{props?.data?.description}</span>
+                <span
+                    className="section-card-title">
+                    {truncateText(props?.data?.title, titleLimit)}
+                </span>
+                <span className="section-card-description">
+                    {truncateText(props?.data?.description, titleLimit)}
+                </span>
             </div>
         </div>
     )
