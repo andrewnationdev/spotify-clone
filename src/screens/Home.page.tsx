@@ -3,6 +3,7 @@ import '../styles/pages.css';
 import CircleDarkerButtonComponent from '../components/CircleDarkerButton.component';
 import AvatarCircleComponent from '../components/AvatarCircle.component';
 import {userMock} from '../mock/userMock';
+import SectionsComponent from '../components/Home/Sections.component';
 
 export default function HomeScreen() {
     return (
@@ -21,6 +22,9 @@ export default function HomeScreen() {
                     <AvatarCircleComponent avatarURL={userMock.avatar}/>
                 </div>
             </header>
+            <div>
+                <SectionsComponent></SectionsComponent>
+            </div>
         </div>
     );
 }

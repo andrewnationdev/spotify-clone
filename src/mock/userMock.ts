@@ -92,7 +92,24 @@ export const userMock = {
             cover: 'capa_anos90.jpg',
             songs: 30
         }
-    ]
+    ],
+    currentlyPlaying: {
+        title: '',
+        singer: '',
+        cover: '',
+        isFavorite: false
+    },
+    sections: [{
+        title: 'Tocados recentemente',
+        data: [
+            {
+                cover: 'https://1734811051.rsc.cdn77.org/data/images/full/359628/sea-of-thieves-logo.jpg',
+                title: 'Título do card',
+                description: 'Descrição do card',
+                isArtistCard: false
+            }
+        ]
+    }]
 } as {
     name: string;
     avatar: string;
@@ -102,5 +119,14 @@ export const userMock = {
         singer: string;
         cover: string;
         isFavorite: boolean;
-    }
+    },
+    sections: {
+        title: string;
+        data: {
+            cover: string;
+            title: string;
+            description: string;
+            isArtistCard: boolean;
+        }[];
+    }[]
 }
