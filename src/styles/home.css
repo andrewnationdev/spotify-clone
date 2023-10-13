@@ -1,4 +1,7 @@
-.section-container{}
+.section-container{
+    display: flex;
+    flex-direction: column;
+}
 
 .section-cards {}
 
@@ -10,16 +13,33 @@
 
 .home-page-v {}
 
-.section-card-container {}
+.section-card-container {
+    width: 160px;
+    border-radius: 8px;
+    background-color: #161616;
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+}
 
 .section-card-main {}
 
-.section-card-picture {}
+.section-card-picture {
+    border-radius: 8px;
+    width: 160px;
+}
 
-.section-card-info {}
+.section-card-info {
+    display: flex;
+    flex-direction: column;
+}
 
 .card-play-button {}
 
-.section-card-title {}
+.section-card-title {
+    color: var(--primary);
+}
 
-.section-card-description {}
+.section-card-description {
+    color: var(--textgray);
+}
