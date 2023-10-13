@@ -6,8 +6,8 @@ export default function SectionsComponent() {
     return (
         <div className="home-page-v">
             <SingleSectionComponent 
-                title={userMock?.section[0]?.title} 
-                data={userMock?.section[0]?.data} 
+                title={userMock?.sections[0]?.title} 
+                data={userMock?.sections[0]?.data} 
             />
         </div>
     )
