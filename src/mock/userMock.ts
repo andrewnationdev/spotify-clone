@@ -92,7 +92,8 @@ export const userMock = {
             cover: 'capa_anos90.jpg',
             songs: 30
         }
-    ]
+    ],
+    sections: []
 } as {
     name: string;
     avatar: string;
@@ -102,5 +103,6 @@ export const userMock = {
         singer: string;
         cover: string;
         isFavorite: boolean;
-    }
+    },
+    sections: any[]
 }
