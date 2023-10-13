@@ -1,6 +1,6 @@
 import '../../styles/home.css';
 import SingleSectionComponent from './SingleSection.component';
-import {userMock} from '../mock/userMock';
+import {userMock} from '../../mock/userMock';
 
 export default function SectionsComponent(){
     return(
