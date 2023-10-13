@@ -1,7 +1,7 @@
 import '../../styles/home.css';
 import SectionCardComponent from './SectionCard.component';
 
-export function SingleSectionComponent(){
+export default function SingleSectionComponent(){
     return(
         <section className="section-container">
             <div className="section-header">
