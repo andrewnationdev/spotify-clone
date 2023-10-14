@@ -1,4 +1,5 @@
 import '../../styles/home.css';
+import truncateFunction from '../../utils/Truncate';
 
 export default function SectionCardComponent(props: {
     data: {
@@ -11,13 +12,6 @@ export default function SectionCardComponent(props: {
 
     const titleLimit = 14;
     const descriptionLimit = 25;
-
-    function truncateText(text: string, limit: number) {
-        if (text.length > limit) {
-            return text.substring(0, limit) + '...';
-        }
-        return text;
-    }
 
     return (
         <div className="section-card-container">
