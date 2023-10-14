@@ -71,6 +71,10 @@
     width: calc(100% - 10px);
 }
 
+.playlist-card-container > * {
+    font-weight: 600;
+}
+
 .playlist-card-title {
     color: var(--primary);
     font-size: 14px;
