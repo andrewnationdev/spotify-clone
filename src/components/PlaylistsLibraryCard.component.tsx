@@ -1,5 +1,5 @@
 import '../styles/sidebar.css';
-import truncateText from '../../utils/Truncate';
+import truncateText from '../utils/Truncate';
 
 export default function PlaylistsLibraryCardComponent(props: {
     title: string,
