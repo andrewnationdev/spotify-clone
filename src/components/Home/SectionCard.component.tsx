@@ -1,5 +1,5 @@
 import '../../styles/home.css';
-import truncateFunction from '../../utils/Truncate';
+import truncateText from '../../utils/Truncate';
 
 export default function SectionCardComponent(props: {
     data: {
