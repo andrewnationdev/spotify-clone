@@ -5,7 +5,7 @@ import HomeScreen from './screens/Home.page';
 import SidebarComponent from './components/Sidebar.component';
 import PlayerComponent from './components/Player/Player.component';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import fetchAPIData from '/modules/fetch';
+import fetchAPIData from './modules/fetch';
 import {IAPIResponse} from './types/API';
 import {DataContext} from './context/context';
 
