@@ -9,12 +9,7 @@ import React, {useContext, useCallback}  from 'react';
 import { IAPIResponse } from '../types/API';
 
 export default function HomeScreen() {
-    const context = useSpotifyContext();
-
-    const data = useCallback((): IAPIResponse =>{
-        console.log(context)
-        return context!.data!;
-    }, [context.data])
+    const context = useContext(SpotifyContext);
 
     return (
         <div className="page-container">
@@ -30,7 +25,7 @@ export default function HomeScreen() {
                         Instalar aplicativo
                     </button>
                     <CircleDarkerButtonComponent icon="notifications_none"/>
-                    <AvatarCircleComponent avatarURL={data()!.avatar}/>
+                    <AvatarCircleComponent avatarURL={context!.data!.avatar}/>
                 </div>
             </header>
             <div className="main-page-section">
