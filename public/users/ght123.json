@@ -273,6 +273,96 @@
                     "isArtistCard": false
                 }
             ]
+        },
+        {
+            "title": "",
+            "data": [
+                {
+                  "title": "Brasilidades",
+                  "description": "O melhor da música brasileira",
+                  "cover": "",
+                  "isArtistCard": false
+                },
+                {
+                  "title": "Forró",
+                  "description": "O ritmo do Nordeste",
+                  "cover": "",
+                  "isArtistCard": false
+                },
+                {
+                  "title": "MPB",
+                  "description": "A música popular brasileira",
+                  "cover": "",
+                  "isArtistCard": false
+                },
+                {
+                  "title": "Funk",
+                  "description": "O ritmo urbano",
+                  "cover": "",
+                  "isArtistCard": false
+                }
+              ]
+        },
+        {
+            "title": "",
+            "data": [
+                
+                {
+                  "title": "Thriller",
+                  "description": "Michael Jackson",
+                  "isArtistCard": false,
+                  "cover": ""
+                },
+                {
+                  "title": "Hey Jude",
+                  "description": "The Beatles",
+                  "isArtistCard": false,
+                  "genre": "Rock"
+                },
+                {
+                  "title": "Dancing Queen",
+                  "description": "ABBA",
+                  "isArtistCard": false,
+                  "cover": ""
+                },
+               
+                {
+                  "title": "Sweet Caroline",
+                  "description": "Neil Diamond",
+                  "isArtistCard": false,
+                  "cover": ""
+                }
+              ]
+              
+        },
+        {
+            "title": "",
+            "data": [
+                {
+                  "title": "Rubber Soul",
+                  "description": "The Beatles",
+                  "isArtistCard": false,
+                  "cover": ""
+                },
+                {
+                  "title": "The Wall",
+                  "description": "Pink Floyd",
+                  "isArtistCard": false,
+                  "cover": ""
+                },
+                {
+                  "title": "The Joshua Tree",
+                  "description": "U2",
+                  "isArtistCard": false,
+                  "cover": ""
+                },
+                {
+                  "title": "Appetite for Destruction",
+                  "description": "Guns N' Roses",
+                  "isArtistCard": false,
+                  "cover": ""
+                }
+              ]
         }
     ]
 }
