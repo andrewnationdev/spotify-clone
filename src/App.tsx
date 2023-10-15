@@ -15,8 +15,6 @@ function App() {
   const fetchData = async () => {
     const data = await fetchAPIData("ght123");
 
-    console.log(context.data)
-
     context.updateData(data);
   }
 

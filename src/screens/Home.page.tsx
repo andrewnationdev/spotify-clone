@@ -5,10 +5,14 @@ import AvatarCircleComponent from '../components/AvatarCircle.component';
 import {userMock} from '../mock/userMock';
 import SectionsComponent from '../components/Home/Sections.component';
 import {SpotifyContext} from '../context/context';
-import React, {useContext}  from 'react';
+import React, {useContext, useCallback}  from 'react';
 
 export default function HomeScreen() {
-    const context = useContext(SpotifyContext);
+    const context = useSpotifyContext();
+
+    const data = useCallback(()=>{
+        return useSpotifyContext();
+    }, [context.data])
 
     return (
         <div className="page-container">
@@ -24,7 +28,7 @@ export default function HomeScreen() {
                         Instalar aplicativo
                     </button>
                     <CircleDarkerButtonComponent icon="notifications_none"/>
-                    <AvatarCircleComponent avatarURL={context!.data!.avatar!}/>
+                    <AvatarCircleComponent avatarURL={data!.avatar}/>
                 </div>
             </header>
             <div className="main-page-section">
