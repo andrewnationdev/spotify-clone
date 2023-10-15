@@ -3,7 +3,7 @@ import {IAPIResponse} from '../types/API';
 
 export const SpotifyContext = createContext();
 
-export const UserProvider = ({ children }) => {
+export const SpotifyProvider = ({ children }) => {
   const [data, setData] = useState<IAPIResponse | {}>({});
 
   const updateData = (updatedData) => {
