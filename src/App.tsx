@@ -10,12 +10,12 @@ import { SpotifyProvider, SpotifyContext } from './context/context';
 import { useQuery } from 'react-query';
 
 function App() {
-
-
   const context = useContext(SpotifyContext);
 
   const fetchData = async () => {
     const data = await fetchAPIData("ght123");
+
+    console.log(context.data)
 
     context.updateData(data);
   }
