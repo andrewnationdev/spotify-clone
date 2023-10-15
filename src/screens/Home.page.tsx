@@ -11,7 +11,7 @@ export default function HomeScreen() {
     const context = useSpotifyContext();
 
     const data = useCallback(()=>{
-        return useSpotifyContext();
+        return context.data;
     }, [context.data])
 
     return (
