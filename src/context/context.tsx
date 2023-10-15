@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import {IAPIResponse} from '../types/API';
+import { IAPIResponse } from '../types/API';
 
 type TContext = {
     data: IAPIResponse | {} | undefined;
@@ -7,23 +7,34 @@ type TContext = {
 }
 
 export const SpotifyContext = createContext<TContext>({
-    data: {},
-    updateData: () => {}
+    data: {
+        name: '',
+        avatar: '',
+        playlists: [],
+        currentlyPlaying: {
+            title: '',
+            singer: '',
+            cover: '',
+            isFavorite: false,
+        },
+        sections: [],
+    },
+    updateData: () => { }
 });
 
 export const SpotifyProvider = ({ children }) => {
-  const [data, setData] = useState<IAPIResponse | {}>({});
+    const [data, setData] = useState<IAPIResponse | {}>({});
 
-  const updateData = (updatedData) => {
-    setData((prevUser) => ({
-      ...prevData,
-      ...updatedData,
-    }));
-  };
+    const updateData = (updatedData) => {
+        setData((prevUser) => ({
+            ...prevData,
+            ...updatedData,
+        }));
+    };
 
-  return (
-    <SpotifyContext.Provider value={{ user, updateUserData }}>
-      {children}
-    </SpotifyContext.Provider>
-  );
+    return (
+        <SpotifyContext.Provider value={{ user, updateUserData }}>
+            {children}
+        </SpotifyContext.Provider>
+    );
 };
