@@ -38,7 +38,7 @@ function App() {
       apiResult
     }))
 
-    console.log(data, store.state)
+    console.log(data, store)
   }, [apiResult])
 
   return (
