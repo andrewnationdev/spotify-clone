@@ -26,7 +26,7 @@ export const SpotifyProvider = ({ children }: {children: React.ReactNode}) => {
     const [data, setData] = useState<IAPIResponse | {}>({});
 
     const updateData = (updatedData: IAPIResponse) => {
-        setData((prevUser) => ({
+        setData((prevData) => ({
             ...prevData,
             ...updatedData,
         }));
