@@ -23,7 +23,7 @@ function App() {
   const { data, isLoading, isError, refetch } = useQuery('global-query', fetchData);
 
   return (
-    <DataProvider>
+    <SpotifyProvider>
       <QueryClientProvider client={queryClient}>
         <div className="App">
           <div className="main-flex">
@@ -33,7 +33,7 @@ function App() {
           <PlayerComponent/>
         </div>
       </QueryClientProvider>
-    </DataProvider>
+    </SpotifyProvider>
   );
 }
 
