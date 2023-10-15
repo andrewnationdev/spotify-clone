@@ -5,7 +5,7 @@ interface IStoreActions {
   updateData: (newData: IAPIResponse) => void;
 }
 
-const useSpotifyStore = create<IAPIResponse & IStoreActions>((set) => ({
+const useSpotifyStore = create<{state: {data: IAPIResponse}} & IStoreActions>((set) => ({
   state: {
     data: {
       name: '',
