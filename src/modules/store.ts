@@ -1,9 +1,28 @@
-import { create } from 'zustand'
+import create from 'zustand';
+import {IAPIResponse} from '../types/API';
 
-const useSpotifyStore = create((set) => ({
-  bears: 0,
-  updateData: () => set((data: IAPIResponse) => ((s) => ({
-    ...s,
-    data
-  }))
-}))
+interface IStoreActions {
+  updateData: (newData: IAPIResponse['data']) => void;
+}
+
+const useSpotifyStore = create<IAPIResponse & IStoreActions>((set) => ({
+  state: {
+    data: {
+      name: '',
+      avatar: '',
+      playlists: [],
+      currentlyPlaying: {
+        title: '',
+        singer: '',
+        cover: '',
+        isFavorite: false,
+      },
+      sections: [],
+    },
+  },
+  updateData: (newData) => {
+    set((state: IAPIResponse) => ({ state: { ...state.state, data: newData } }));
+  },
+}));
+
+export default useSpotifyStore;
