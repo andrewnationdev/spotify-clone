@@ -7,12 +7,12 @@ import PlayerComponent from './components/Player/Player.component';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import fetchAPIData from './modules/fetch';
 import {IAPIResponse} from './types/API';
-import {DataContext} from './context/context';
+import {SpotifyContext} from './context/context';
 
 function App() {
   const queryClient = new QueryClient();
 
-  const context = useContext(DataContext);
+  const context = useContext(SpotifyContext);
 
   const fetchData = (): IAPIResponse => {
       const data: IAPIResponse = fetchAPIData("ght123");

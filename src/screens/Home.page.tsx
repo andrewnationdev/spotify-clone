@@ -4,11 +4,11 @@ import CircleDarkerButtonComponent from '../components/CircleDarkerButton.compon
 import AvatarCircleComponent from '../components/AvatarCircle.component';
 import {userMock} from '../mock/userMock';
 import SectionsComponent from '../components/Home/Sections.component';
-import {DataContext} from '../context/context';
+import {SpotifyContext} from '../context/context';
 import React, {useContext}  from 'react';
 
 export default function HomeScreen() {
-    const context = useContext(DataContext);
+    const context = useContext(SpotifyContext);
 
     return (
         <div className="page-container">
