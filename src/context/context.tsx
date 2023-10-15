@@ -23,7 +23,18 @@ export const SpotifyContext = createContext<TContext>({
 });
 
 export const SpotifyProvider = ({ children }: {children: React.ReactNode}) => {
-    const [data, setData] = useState<IAPIResponse | {}>({});
+    const [data, setData] = useState<IAPIResponse>({
+        name: '',
+        avatar: '',
+        playlists: [],
+        currentlyPlaying: {
+            title: '',
+            singer: '',
+            cover: '',
+            isFavorite: false,
+        },
+        sections: [],
+    });
 
     const updateData = (updatedData: IAPIResponse) => {
         setData((prevData) => ({
