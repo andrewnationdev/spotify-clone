@@ -18,9 +18,9 @@ const useSpotifyStore = create<{data: IAPIResponse} & IStoreActions>((set) => ({
       },
       sections: [],
     },
-  updateData: (newData) => {
-    set((data: IAPIResponse) => ({ data: { ...data.data, data: newData } }));
-  },
+    updateData: (newData) => {
+        set({ data: { ...data.data, ...newData } });
+      },      
 }));
 
 export default useSpotifyStore;
