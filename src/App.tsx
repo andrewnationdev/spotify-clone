@@ -15,8 +15,8 @@ function App() {
 
   const context = useContext(SpotifyContext);
 
-  const fetchData = () => {
-      const data = fetchAPIData("ght123");
+  const fetchData = async () => {
+      const data = await fetchAPIData("ght123");
 
       context.updateData(data);
   }
