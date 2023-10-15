@@ -24,7 +24,7 @@ export default function HomeScreen() {
                         Instalar aplicativo
                     </button>
                     <CircleDarkerButtonComponent icon="notifications_none"/>
-                    <AvatarCircleComponent avatarURL={context!.avatar!}/>
+                    <AvatarCircleComponent avatarURL={context!.data!.avatar!}/>
                 </div>
             </header>
             <div className="main-page-section">

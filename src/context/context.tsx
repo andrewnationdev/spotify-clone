@@ -2,9 +2,10 @@ import React, { createContext, useContext, useState } from 'react';
 import {IAPIResponse} from '../types/API';
 
 export const SpotifyContext = createContext<{
-    IAPIResponse;
+    data: IAPIResponse;
     updateData: (x: any) => void 
 } | {
+    data: {};
     updateData: (x: any) => void
 }>({});
 
