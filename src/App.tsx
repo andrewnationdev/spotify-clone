@@ -10,7 +10,7 @@ import { useQuery } from 'react-query';
 import useSpotifyStore from './modules/store';
 
 function App() {
-  const [data, setData] = useState<IAPIResponse>({
+  const [apiResult, setApiResult] = useState<IAPIResponse>({
     name: '',
     avatar: '',
     playlists: [],
@@ -26,7 +26,7 @@ function App() {
   const fetchData = async () => {
     const res = await fetchAPIData("ght123");
 
-    setData(data);
+    setApiResult(res);
   }
 
   const { data, isLoading, isError, refetch } = useQuery('global-query', fetchData);
@@ -36,12 +36,12 @@ function App() {
       ...s,
       data: {
         ...s.data,
-        data
+        apiResult
       }
     }))
 
     console.log(data, useSpotifyStore().state)
-  }, [data])
+  }, [apiResult])
 
   return (
     <div className="App">
