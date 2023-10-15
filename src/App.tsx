@@ -7,7 +7,7 @@ import PlayerComponent from './components/Player/Player.component';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import fetchAPIData from './modules/fetch';
 import {IAPIResponse} from './types/API';
-import {SpotifyContextProvider} from './context/context';
+import {SpotifyProvider} from './context/context';
 
 function App() {
   const queryClient = new QueryClient();
@@ -23,7 +23,7 @@ function App() {
   const { data, isLoading, isError, refetch } = useQuery('global-query', fetchData);
 
   return (
-    <SpotifyContextProvider>
+    <SpotifyProvider>
       <QueryClientProvider client={queryClient}>
         <div className="App">
           <div className="main-flex">
@@ -33,7 +33,7 @@ function App() {
           <PlayerComponent/>
         </div>
       </QueryClientProvider>
-    </SpotifyContextProvider>
+    </SpotifyProvider>
   );
 }
 
