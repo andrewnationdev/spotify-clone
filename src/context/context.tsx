@@ -3,7 +3,7 @@ import { IAPIResponse } from '../types/API';
 
 type TContext = {
     data: IAPIResponse | undefined;
-    updateData?: (arg: IAPIResponse) => void;
+    updateData: (updatedData: IAPIResponse) => void;
 }
 
 export const SpotifyContext = createContext<TContext>({
@@ -19,6 +19,7 @@ export const SpotifyContext = createContext<TContext>({
         },
         sections: [],
     },
+    updateData: (updateData: IAPIResponse) => {}
 });
 
 
