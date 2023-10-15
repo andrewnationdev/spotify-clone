@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from 'react';
 import { IAPIResponse } from '../types/API';
 
 type TContext = {
-    data: IAPIResponse | undefined;
+    data: IAPIResponse;
     updateData: (updatedData: IAPIResponse) => void;
 }
 
