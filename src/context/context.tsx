@@ -8,7 +8,7 @@ type TContext = {
 
 export const SpotifyContext = createContext<TContext>({
     data: {},
-    updateData: (x) => void
+    updateData: () => {}
 });
 
 export const SpotifyProvider = ({ children }) => {
