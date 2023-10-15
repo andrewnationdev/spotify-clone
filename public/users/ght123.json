@@ -275,92 +275,93 @@
             ]
         },
         {
-            "title": "",
+            "title": "Paradas",
             "data": [
                 {
                   "title": "Brasilidades",
                   "description": "O melhor da música brasileira",
-                  "cover": "",
+                  "cover": "https://th.bing.com/th/id/OIP.3fNKneg3F1DP9DKt7T5quwHaHa?pid=ImgDet&rs=1",
                   "isArtistCard": false
                 },
                 {
                   "title": "Forró",
                   "description": "O ritmo do Nordeste",
-                  "cover": "",
+                  "cover": "https://th.bing.com/th/id/OIP.znJC4zRYRFV8opZjPBt81AHaHa?pid=ImgDet&w=520&h=520&rs=1",
                   "isArtistCard": false
                 },
                 {
                   "title": "MPB",
                   "description": "A música popular brasileira",
-                  "cover": "",
+                  "cover": "https://linkstorage.linkfire.com/medialinks/images/86e098c6-68e5-4363-83e1-16eebdb026b8/artwork-440x440.jpg",
                   "isArtistCard": false
                 },
                 {
                   "title": "Funk",
                   "description": "O ritmo urbano",
-                  "cover": "",
+                  "cover": "https://www.cdhal.nl/media/catalog/product/cache/1cb2ffd6e6617c6e262e9bbd01b25ed1/t/h/thescript-sunsets.jpg",
                   "isArtistCard": false
                 }
               ]
         },
         {
-            "title": "",
+            "title": "Novos lançamentos populares",
             "data": [
                 
                 {
                   "title": "Thriller",
                   "description": "Michael Jackson",
                   "isArtistCard": false,
-                  "cover": ""
+                  "cover": "https://th.bing.com/th/id/OIP.F3uxSvpgS2gC0oYqXWfcwwHaHa?pid=ImgDet&w=700&h=700&rs=1"
                 },
                 {
                   "title": "Hey Jude",
                   "description": "The Beatles",
                   "isArtistCard": false,
-                  "genre": "Rock"
+                  "genre": "Rock",
+                  "cover": "https://th.bing.com/th/id/OIP.AIxnefl0KJyBBonmU-942QHaHa?pid=ImgDet&w=500&h=500&rs=1"
                 },
                 {
                   "title": "Dancing Queen",
                   "description": "ABBA",
                   "isArtistCard": false,
-                  "cover": ""
+                  "cover": "https://th.bing.com/th/id/R.f928d3b9be5d420d2746a68676c3a529?rik=xIEXI71K6jiFiQ&riu=http%3a%2f%2fimages.rapgenius.com%2f99b82817b66b2ec8064ef6440c2a42cf.1000x1000x1.png&ehk=lhTqDZsprFxmdCHqCdmFPgf582dnTDiyksp6ZSGACc8%3d&risl=&pid=ImgRaw&r=0"
                 },
                
                 {
                   "title": "Sweet Caroline",
                   "description": "Neil Diamond",
                   "isArtistCard": false,
-                  "cover": ""
+                  "cover": "https://th.bing.com/th/id/OIP.JPHr-0-sJ7jnf6Apf0l_jAAAAA?pid=ImgDet&w=400&h=400&rs=1"
                 }
               ]
               
         },
         {
-            "title": "",
+            "title": "álbuns populares",
             "data": [
                 {
                   "title": "Rubber Soul",
                   "description": "The Beatles",
                   "isArtistCard": false,
-                  "cover": ""
+                  "cover": "https://images-na.ssl-images-amazon.com/images/I/71nsMjB%2B5qL._AC_SX679_.jpg"
                 },
                 {
                   "title": "The Wall",
                   "description": "Pink Floyd",
                   "isArtistCard": false,
-                  "cover": ""
+                  "cover": "https://th.bing.com/th/id/OIP.jFuoONh0tRBYOTG6VXZOoQAAAA?pid=ImgDet&rs=1"
                 },
                 {
                   "title": "The Joshua Tree",
                   "description": "U2",
                   "isArtistCard": false,
-                  "cover": ""
+                  "cover": "https://th.bing.com/th/id/OIP.M9dgLpCcEDedZeFEyNUjvQAAAA?pid=ImgDet&rs=1"
                 },
                 {
                   "title": "Appetite for Destruction",
                   "description": "Guns N' Roses",
                   "isArtistCard": false,
-                  "cover": ""
+                  "cover": "https://i.pinimg.com/474x/08/40/18/084018a1039f2b87f2fb8c3af75ad63c--alternative-rock-bands-rock-indie.jpg"
                 }
               ]
         }
