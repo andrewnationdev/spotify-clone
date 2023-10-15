@@ -35,10 +35,7 @@ function App() {
   useEffect(() => {
     store.updateData((s: IAPIResponse) => ({
       ...s,
-      data: {
-        ...s.data,
-        apiResult
-      }
+      apiResult
     }))
 
     console.log(data, store.state)
