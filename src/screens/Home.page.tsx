@@ -4,7 +4,7 @@ import CircleDarkerButtonComponent from '../components/CircleDarkerButton.compon
 import AvatarCircleComponent from '../components/AvatarCircle.component';
 import {userMock} from '../mock/userMock';
 import SectionsComponent from '../components/Home/Sections.component';
-import {SpotifyContext} from '../context/context';
+import {SpotifyContext, useSpotifyContext} from '../context/context';
 import React, {useContext, useCallback}  from 'react';
 
 export default function HomeScreen() {
