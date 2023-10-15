@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import fetchAPIData from './modules/fetch';
 import {IAPIResponse} from './types/API';
 import {SpotifyProvider, SpotifyContext} from './context/context';
+import { useQuery } from 'react-query';
 
 function App() {
   const queryClient = new QueryClient();
