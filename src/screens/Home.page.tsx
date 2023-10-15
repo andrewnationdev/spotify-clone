@@ -4,8 +4,12 @@ import CircleDarkerButtonComponent from '../components/CircleDarkerButton.compon
 import AvatarCircleComponent from '../components/AvatarCircle.component';
 import {userMock} from '../mock/userMock';
 import SectionsComponent from '../components/Home/Sections.component';
+import {DataContext} from '../context/context';
+import React, {useContext}  from 'react';
 
 export default function HomeScreen() {
+    const context = useContext(DataContext);
+
     return (
         <div className="page-container">
             <header>
@@ -20,7 +24,7 @@ export default function HomeScreen() {
                         Instalar aplicativo
                     </button>
                     <CircleDarkerButtonComponent icon="notifications_none"/>
-                    <AvatarCircleComponent avatarURL={userMock.avatar}/>
+                    <AvatarCircleComponent avatarURL={context!.avatar!}/>
                 </div>
             </header>
             <div className="main-page-section">
