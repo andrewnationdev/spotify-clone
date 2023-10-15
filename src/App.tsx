@@ -11,8 +11,6 @@ import { useQuery } from 'react-query';
 function App() {
   const fetchData = async () => {
     const data = await fetchAPIData("ght123");
-
-    context.updateData(data);
   }
 
   const { data, isLoading, isError, refetch } = useQuery('global-query', fetchData);

@@ -54,7 +54,6 @@
     background-color: #282828;
 }
 
-
 .section-card-main:hover > .card-play-button {
     font-size: 3rem;
     color: var(--green);
