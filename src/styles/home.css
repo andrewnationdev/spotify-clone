@@ -59,6 +59,8 @@
     font-size: 3rem;
     color: var(--green);
     visibility: visible;
+    transition: bottom 0.5s;
+    bottom: 23%;
 }
 
 .section-card-main {}
@@ -84,8 +86,9 @@
     color: var(--green);
     visibility: collapse;
     position: relative;
-    bottom: 23%;
+    bottom: 20%;
     left: 33%;
+
 }
 
 .section-card-title {
