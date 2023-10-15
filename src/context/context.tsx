@@ -3,7 +3,7 @@ import { IAPIResponse } from '../types/API';
 
 type TContext = {
     data: IAPIResponse | {} | undefined;
-    updateData: (arg) => void;
+    updateData: (arg: IAPIResponse) => void;
 }
 
 export const SpotifyContext = createContext<TContext>({
@@ -25,7 +25,7 @@ export const SpotifyContext = createContext<TContext>({
 export const SpotifyProvider = ({ children }: {children: React.ReactNode}) => {
     const [data, setData] = useState<IAPIResponse | {}>({});
 
-    const updateData = (updatedData) => {
+    const updateData = (updatedData: IAPIResponse) => {
         setData((prevUser) => ({
             ...prevData,
             ...updatedData,
