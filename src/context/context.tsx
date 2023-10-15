@@ -33,7 +33,7 @@ export const SpotifyProvider = ({ children }: {children: React.ReactNode}) => {
     };
 
     return (
-        <SpotifyContext.Provider value={{ user, updateUserData }}>
+        <SpotifyContext.Provider value={{ data, updateData }}>
             {children}
         </SpotifyContext.Provider>
     );
