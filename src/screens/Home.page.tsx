@@ -6,12 +6,13 @@ import {userMock} from '../mock/userMock';
 import SectionsComponent from '../components/Home/Sections.component';
 import {SpotifyContext, useSpotifyContext} from '../context/context';
 import React, {useContext, useCallback}  from 'react';
+import { IAPIResponse } from '../types/API';
 
 export default function HomeScreen() {
     const context = useSpotifyContext();
 
-    const data = useCallback(()=>{
-        return context.data;
+    const data: IAPIResponse = useCallback((): IAPIResponse =>{
+        return context!.data;
     }, [context.data])
 
     return (
