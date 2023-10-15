@@ -11,6 +11,23 @@ import { IAPIResponse } from '../types/API';
 export default function HomeScreen() {
     const context = useContext(SpotifyContext);
 
+    const [data, setData] = useState<IAPIResponse>({
+        name: '',
+        avatar: '',
+        playlists: [],
+        currentlyPlaying: {
+            title: '',
+            singer: '',
+            cover: '',
+            isFavorite: false,
+        },
+        sections: [],
+    });
+
+    useEffect(()=>{
+        setData(context.data)
+    }, [context.data])
+
     return (
         <div className="page-container">
             <header>
@@ -25,7 +42,7 @@ export default function HomeScreen() {
                         Instalar aplicativo
                     </button>
                     <CircleDarkerButtonComponent icon="notifications_none"/>
-                    <AvatarCircleComponent avatarURL={context!.data!.avatar}/>
+                    <AvatarCircleComponent avatarURL={data.avatar}/>
                 </div>
             </header>
             <div className="main-page-section">
