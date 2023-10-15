@@ -11,7 +11,7 @@ import { IAPIResponse } from '../types/API';
 export default function HomeScreen() {
     const context = useSpotifyContext();
 
-    const data: IAPIResponse = useCallback((): IAPIResponse =>{
+    const data = useCallback((): IAPIResponse =>{
         return context!.data;
     }, [context.data])
 
