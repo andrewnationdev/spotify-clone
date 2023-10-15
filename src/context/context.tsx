@@ -7,7 +7,7 @@ export const SpotifyContext = createContext<{
 } | {
     data: {};
     updateData: (x: any) => void
-}>({});
+}>();
 
 export const SpotifyProvider = ({ children }) => {
   const [data, setData] = useState<IAPIResponse | {}>({});
