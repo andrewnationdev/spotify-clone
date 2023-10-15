@@ -2,7 +2,7 @@ import create from 'zustand';
 import {IAPIResponse} from '../types/API';
 
 interface IStoreActions {
-  updateData: (newData: IAPIResponse['data']) => void;
+  updateData: (newData: IAPIResponse) => void;
 }
 
 const useSpotifyStore = create<IAPIResponse & IStoreActions>((set) => ({
