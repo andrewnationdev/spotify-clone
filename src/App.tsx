@@ -33,10 +33,7 @@ function App() {
   const store = useSpotifyStore();
 
   useEffect(() => {
-    store.updateData((s: IAPIResponse) => ({
-      ...s,
-      apiResult
-    }))
+    store.updateData(apiResult)
 
     console.log(data, store)
   }, [apiResult])
