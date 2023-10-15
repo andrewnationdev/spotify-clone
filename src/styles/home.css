@@ -103,6 +103,10 @@
 }
 
 .section-link {
+    cursor: pointer;
+}
+
+.section-link:hover{
     text-decoration: underline;
     cursor: pointer;
 }
