@@ -38,7 +38,7 @@ export default function SidebarComponent() {
                     </a>
                 </div>
                 <div className="playlists-vertical">
-                    {playlists.length() > 0 && playlists.map((playlist) =>
+                    {playlists.length > 0 && playlists.map((playlist) =>
                     <PlaylistsLibraryCardComponent
                         title={playlist.title}
                         creator={playlist.creator}
