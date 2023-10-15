@@ -7,7 +7,7 @@ import PlayerComponent from './components/Player/Player.component';
 import fetchAPIData from './modules/fetch';
 import { IAPIResponse } from './types/API';
 import { useQuery } from 'react-query';
-import {useSpotifyStore} from './modules/store';
+import useSpotifyStore from './modules/store';
 
 function App() {
   const fetchData = async () => {
