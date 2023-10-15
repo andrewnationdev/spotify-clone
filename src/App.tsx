@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HomeScreen from './screens/Home.page';
@@ -10,16 +10,38 @@ import { useQuery } from 'react-query';
 import useSpotifyStore from './modules/store';
 
 function App() {
-  const fetchData = async () => {
-    const data = await fetchAPIData("ght123");
+  const [data, setData] = useState<IAPIResponse>({
+    name: '',
+    avatar: '',
+    playlists: [],
+    currentlyPlaying: {
+      title: '',
+      singer: '',
+      cover: '',
+      isFavorite: false,
+    },
+    sections: []
+  });
 
-    useSpotifyStore().updateData((s) => ({
-      ...s,
-      data
-    }))
+  const fetchData = async () => {
+    const res = await fetchAPIData("ght123");
+
+    setData(data);
   }
 
   const { data, isLoading, isError, refetch } = useQuery('global-query', fetchData);
+
+  useEffect(() => {
+    useSpotifyStore().updateData((s) => ({
+      ...s,
+      data: {
+        ...s.data,
+        data
+      }
+    }))
+
+    console.log(data, useSpotifyStore().state)
+  }, [data])
 
   return (
     <div className="App">
