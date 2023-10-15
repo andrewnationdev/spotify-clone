@@ -41,6 +41,8 @@ export const SpotifyProvider = ({ children }: {children: React.ReactNode}) => {
             ...prevData,
             ...updatedData,
         }));
+
+        console.log(updatedData)
     };
 
     return (
