@@ -6,20 +6,10 @@ import {userMock} from '../mock/userMock';
 import SectionsComponent from '../components/Home/Sections.component';
 import React, {useState, useEffect}  from 'react';
 import { IAPIResponse } from '../types/API';
+import useSpotifyStore from '../modules/store';
 
 export default function HomeScreen() {
-    const [data, setData] = useState<IAPIResponse>({
-        name: '',
-        avatar: '',
-        playlists: [],
-        currentlyPlaying: {
-            title: '',
-            singer: '',
-            cover: '',
-            isFavorite: false,
-        },
-        sections: [],
-    });
+    const [avatar, setAvatar] = useSpotifyStore().data.avatar;
 
     return (
         <div className="page-container">
@@ -35,7 +25,7 @@ export default function HomeScreen() {
                         Instalar aplicativo
                     </button>
                     <CircleDarkerButtonComponent icon="notifications_none"/>
-                    <AvatarCircleComponent avatarURL={data.avatar}/>
+                    <AvatarCircleComponent avatarURL={avatar}/>
                 </div>
             </header>
             <div className="main-page-section">
