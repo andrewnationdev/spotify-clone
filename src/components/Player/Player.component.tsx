@@ -14,6 +14,10 @@ interface IPlayer {
 export default function PlayerComponent() {
     const [progress, setProgress] = useState<number>(150);
 
+    const { data, updateData } = useSpotifyStore()
+
+    const {currentlyPlaying} = data;
+
     const convertSecondsToMinutes = (second: number) => {
         const minutes = Math.floor(second / 60);
         const remainingSeconds = second % 60;
@@ -25,12 +29,12 @@ export default function PlayerComponent() {
     return (
         <div className="player-container">
             <div className="player-left-area">
-                <img className="player-cover-picture" src="https://1734811051.rsc.cdn77.org/data/images/full/359628/sea-of-thieves-logo.jpg" alt="" />
+                <img className="player-cover-picture" src={currentlyPlaying.cover} alt="" />
                 <div className="player-music-info">
-                    <span className="player-music-name">Título da Música</span>
-                    <span className="player-music-singer">Cantor</span>
+                    <span className="player-music-name">{currentlyPlaying.title}</span>
+                    <span className="player-music-singer">{currentlyPlaying.singer}</span>
                 </div>
-                <FavoriteComponent />
+                <FavoriteComponent isFavorite={currentlyPlaying.isFavorite}/>
             </div>
             <div className="player-center-area">
                 <div className="buttons-container">

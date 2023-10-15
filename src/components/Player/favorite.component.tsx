@@ -1,7 +1,9 @@
 import { useState } from 'react';
 
-export default function FavoriteComponent() {
-    const [selected, setSelected] = useState<boolean>(false);
+export default function FavoriteComponent(props: {
+    isFavorite: boolean
+}) {
+    const [selected, setSelected] = useState<boolean>(props.isFavorite);
 
     return (
         <div className={""} style={{
