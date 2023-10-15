@@ -23,7 +23,7 @@ export const SpotifyContext = createContext<TContext>({
 });
 
 
-const useSpotifyContext = () => {
+export const useSpotifyContext = () => {
     return useContext(SpotifyContext);
 }
 
