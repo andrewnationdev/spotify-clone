@@ -21,6 +21,7 @@
 
 .section-show-more {
     color: var(--textgrey);
+    font-size: 13px;
 }
 
 .section-title {
