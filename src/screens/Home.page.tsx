@@ -4,13 +4,10 @@ import CircleDarkerButtonComponent from '../components/CircleDarkerButton.compon
 import AvatarCircleComponent from '../components/AvatarCircle.component';
 import {userMock} from '../mock/userMock';
 import SectionsComponent from '../components/Home/Sections.component';
-import {SpotifyContext, useSpotifyContext} from '../context/context';
-import React, {useContext, useCallback, useState, useEffect}  from 'react';
+import React, {useState, useEffect}  from 'react';
 import { IAPIResponse } from '../types/API';
 
 export default function HomeScreen() {
-    const context = useContext(SpotifyContext);
-
     const [data, setData] = useState<IAPIResponse>({
         name: '',
         avatar: '',
@@ -23,10 +20,6 @@ export default function HomeScreen() {
         },
         sections: [],
     });
-
-    useEffect(()=>{
-        setData(context.data)
-    }, [context.data])
 
     return (
         <div className="page-container">

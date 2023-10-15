@@ -6,12 +6,9 @@ import SidebarComponent from './components/Sidebar.component';
 import PlayerComponent from './components/Player/Player.component';
 import fetchAPIData from './modules/fetch';
 import { IAPIResponse } from './types/API';
-import { SpotifyProvider, SpotifyContext } from './context/context';
 import { useQuery } from 'react-query';
 
 function App() {
-  const context = useContext(SpotifyContext);
-
   const fetchData = async () => {
     const data = await fetchAPIData("ght123");
 
@@ -21,18 +18,15 @@ function App() {
   const { data, isLoading, isError, refetch } = useQuery('global-query', fetchData);
 
   return (
-
-      <SpotifyProvider>
-        <div className="App">
-          {!isLoading && <>
-            <div className="main-flex">
-              <SidebarComponent />
-              <HomeScreen />
-            </div>
-            <PlayerComponent />
-          </>}
+    <div className="App">
+      {!isLoading && <>
+        <div className="main-flex">
+          <SidebarComponent />
+          <HomeScreen />
         </div>
-      </SpotifyProvider>
+        <PlayerComponent />
+      </>}
+    </div>
   );
 }
 
