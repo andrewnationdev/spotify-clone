@@ -12,7 +12,7 @@ export default function HomeScreen() {
     const context = useSpotifyContext();
 
     const data = useCallback((): IAPIResponse =>{
-        return context!.data;
+        return context!.data!;
     }, [context.data])
 
     return (
