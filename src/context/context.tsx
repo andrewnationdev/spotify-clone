@@ -3,7 +3,7 @@ import { IAPIResponse } from '../types/API';
 
 type TContext = {
     data: IAPIResponse | {} | undefined;
-    updateData: (arg: any) => void;
+    updateData: (arg) => void;
 }
 
 export const SpotifyContext = createContext<TContext>({
