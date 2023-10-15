@@ -1,13 +1,15 @@
 import React, { createContext, useContext, useState } from 'react';
 import {IAPIResponse} from '../types/API';
 
-export const SpotifyContext = createContext<{
-    data: IAPIResponse;
-    updateData: (x: any) => void 
-} | {
-    data: {};
-    updateData: (x: any) => void
-}>();
+type TContext = {
+    data: IAPIResponse | {} | undefined;
+    updateData: (arg: any) => void;
+}
+
+export const SpotifyContext = createContext<TContext>({
+    data: {},
+    updateData: (x) => void
+});
 
 export const SpotifyProvider = ({ children }) => {
   const [data, setData] = useState<IAPIResponse | {}>({});
