@@ -2,6 +2,7 @@ import '../../styles/player.css';
 import ButtonIconComponent from './ButtonIcon.component';
 import FavoriteComponent from './favorite.component';
 import { useState } from 'react';
+import useSpotifyStore from '../../modules/store';
 
 interface IPlayer {
     cover: string;

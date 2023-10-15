@@ -4,7 +4,7 @@ import LibrarySidebarHeaderComponent from './LibrarySidebarHeader.component';
 import '../styles/pages.css';
 import CircleIconButtonComponent from './CircleIconButton.component';
 import PlaylistsLibraryCardComponent from './PlaylistsLibraryCard.component';
-import useSpotifyStore from '../../modules/store';
+import useSpotifyStore from '../modules/store';
 
 export default function SidebarComponent() {
     const { data, updateData } = useSpotifyStore()
