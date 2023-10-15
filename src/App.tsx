@@ -30,9 +30,10 @@ function App() {
   }
 
   const { data, isLoading, isError, refetch } = useQuery('global-query', fetchData);
+  const store = useSpotifyStore();
 
   useEffect(() => {
-    useSpotifyStore().updateData((s) => ({
+    store.updateData((s) => ({
       ...s,
       data: {
         ...s.data,
@@ -40,7 +41,7 @@ function App() {
       }
     }))
 
-    console.log(data, useSpotifyStore().state)
+    console.log(data, store.state)
   }, [apiResult])
 
   return (
