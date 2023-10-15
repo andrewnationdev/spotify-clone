@@ -5,7 +5,7 @@ import AvatarCircleComponent from '../components/AvatarCircle.component';
 import {userMock} from '../mock/userMock';
 import SectionsComponent from '../components/Home/Sections.component';
 import {SpotifyContext, useSpotifyContext} from '../context/context';
-import React, {useContext, useCallback}  from 'react';
+import React, {useContext, useCallback, useState}  from 'react';
 import { IAPIResponse } from '../types/API';
 
 export default function HomeScreen() {
