@@ -9,7 +9,10 @@ import { IAPIResponse } from '../types/API';
 import useSpotifyStore from '../modules/store';
 
 export default function HomeScreen() {
-    const [avatar, setAvatar] = useSpotifyStore().data.avatar;
+    //const [avatar, setAvatar] = useSpotifyStore().data.avatar;
+    const { data, updateData } = useSpotifyStore()
+
+    const {avatar} = data;
 
     return (
         <div className="page-container">
