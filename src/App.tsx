@@ -13,7 +13,7 @@ function App() {
   const fetchData = async () => {
     const data = await fetchAPIData("ght123");
 
-    useSpotifyStore.updateData((s) => ({
+    useSpotifyStore().updateData((s) => ({
       ...s,
       data
     }))
