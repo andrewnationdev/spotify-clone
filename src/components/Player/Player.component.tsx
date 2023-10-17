@@ -1,7 +1,7 @@
 import '../../styles/player.css';
 import ButtonIconComponent from './ButtonIcon.component';
 import FavoriteComponent from './favorite.component';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import useSpotifyStore from '../../modules/store';
 
 interface IPlayer {
@@ -13,7 +13,8 @@ interface IPlayer {
 }
 
 export default function PlayerComponent() {
-    const [progress, setProgress] = useState<number>(0);
+    //const [progress, setProgress] = useState<number>(0);
+    const progress = useRef(0);
     const [isPlaying, setPlaying] = useState<boolean>(false);
 
     const { data, updateData } = useSpotifyStore()
@@ -29,8 +30,8 @@ export default function PlayerComponent() {
     }
 
     setInterval(() => {
-        if (isPlaying && progress < data?.currentlyPlaying?.trackLength)
-        setProgress(progress + 1);
+        if (isPlaying && progress?.current < data?.currentlyPlaying?.trackLength)
+        progress?.current + 1;
     }, 1000)
 
     return (
@@ -69,12 +70,12 @@ export default function PlayerComponent() {
                     <span style={{
                         fontSize: 12
                     }}>
-                        {convertSecondsToMinutes(progress)}
+                        {convertSecondsToMinutes(progress?.current)}
                     </span>
 
                     <div className="track-progressbar">
                         <div style={{
-                            width: `${(progress / data?.currentlyPlaying?.trackLength) * 100}%`,
+                            width: `${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`,
                             backgroundColor: '#fff',
                             height: '5px'
                         }}></div>
