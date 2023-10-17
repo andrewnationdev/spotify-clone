@@ -27,7 +27,7 @@ export default function ButtonIconComponent(props: {
         <div className={`
                 ${props?.smaller ? 'button-icon-smaller' : 'button-icon-large'}
                 ${props?.isPlayButton ? 'play-button-white' : ''}
-            `} onClick={() => props?.onClick()}>
+            `} onClick={() => { if (props!.onClick) props!.onClick() }}>
             {props?.isVolumeButton ? <div style={{
                 display: 'flex',
                 flexDirection: 'row',
