@@ -31,7 +31,7 @@ export default function PlayerComponent() {
 
     setInterval(() => {
         if (isPlaying && progress?.current < data?.currentlyPlaying?.trackLength)
-        progress?.current +=c 1;
+        progress?.current += 1;
     }, 1000)
 
     return (
