@@ -19,6 +19,7 @@ function App() {
       singer: '',
       cover: '',
       isFavorite: false,
+      trackLength: 0
     },
     sections: []
   });
