@@ -55,7 +55,7 @@ export default function PlayerComponent() {
                     <ButtonIconComponent isPlayButton={false}
                         icon={"skip_previous"}
                     />
-                    {isPlaying ? <ButtonIconComponent isPlayButton={true}
+                    {!isPlaying ? <ButtonIconComponent isPlayButton={true}
                         icon={"play_circle_filled"}
                         onClick={() => setPlaying(true)}
                     /> : <ButtonIconComponent isPlayButton={true}

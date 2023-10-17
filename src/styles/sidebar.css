@@ -87,6 +87,7 @@
 
 .playlist-card-picture {
     width: 45.36px;  
+    border-radius: 8px;
     height: 45.36px;
 }
 
