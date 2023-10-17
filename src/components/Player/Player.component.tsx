@@ -15,6 +15,7 @@ interface IPlayer {
 export default function PlayerComponent() {
     //const [progress, setProgress] = useState<number>(0);
     const progress = useRef(0);
+    const barWidth = useRef(`0%`);
     const [isPlaying, setPlaying] = useState<boolean>(false);
 
     const { data, updateData } = useSpotifyStore()
@@ -30,8 +31,10 @@ export default function PlayerComponent() {
     }
 
     setInterval(() => {
-        if (isPlaying && progress?.current < data?.currentlyPlaying?.trackLength)
+        if (isPlaying && progress?.current < data?.currentlyPlaying?.trackLength){
             progress.current += 1;
+            barWidth.current = `${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`
+        }
     }, 1000)
 
     return (
@@ -54,10 +57,10 @@ export default function PlayerComponent() {
                     />
                     {isPlaying ? <ButtonIconComponent isPlayButton={true}
                         icon={"play_circle_filled"}
-                        onClick={() => setPlaying(!isPlaying)}
+                        onClick={() => setPlaying(true)}
                     /> : <ButtonIconComponent isPlayButton={true}
-                        icon={"play_circle_filled"}
-                        onClick={() => setPlaying(!isPlaying)}
+                        icon={"pause_circle_filled"}
+                        onClick={() => setPlaying(false)}
                     />}
                     <ButtonIconComponent isPlayButton={false}
                         icon={"skip_next"}
@@ -75,7 +78,7 @@ export default function PlayerComponent() {
 
                     <div className="track-progressbar">
                         <div style={{
-                            width: `${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`,
+                            width: barWidth?.current,
                             backgroundColor: '#fff',
                             height: '5px'
                         }}></div>
