@@ -13,7 +13,7 @@ interface IPlayer {
 }
 
 export default function PlayerComponent() {
-    //const [progress, setProgress] = useState<number>(0);
+    const [progressLabel, setProgressLabel] = useState<number>(0);
     const progress = useRef(0);
     const [barWidth, setBarWidth] = useState(`0%`);
     const [isPlaying, setPlaying] = useState<boolean>(false);
@@ -34,13 +34,14 @@ export default function PlayerComponent() {
         const interval = setInterval(() => {
             if (isPlaying && progress?.current < data?.currentlyPlaying?.trackLength) {
               progress.current += 1;
+                setProgressLabel(progress.current);
                 setBarWidth(`${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`);
             }
           }, 1000);
       
           return () => clearInterval(interval);
 
-    }, [progress.current])
+    }, [progress.current, isPlaying])
 
     return (
         <div className="player-container">
@@ -78,7 +79,7 @@ export default function PlayerComponent() {
                     <span style={{
                         fontSize: 12
                     }}>
-                        {convertSecondsToMinutes(progress?.current)}
+                        {convertSecondsToMinutes(progressLabel)}
                     </span>
 
                     <div className="track-progressbar">
