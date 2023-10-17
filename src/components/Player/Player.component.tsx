@@ -29,7 +29,7 @@ export default function PlayerComponent() {
     }
 
     setInterval(() => {
-        if (isPlaying && progress < data?.currentlyPlaying?.trackLength) 7
+        if (isPlaying && progress < data?.currentlyPlaying?.trackLength)
         setProgress(progress + 1);
     }, 1000)
 
