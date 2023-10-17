@@ -31,12 +31,14 @@ export default function PlayerComponent() {
     }
 
     useEffect(() => {
-        setTimeout(() => {
+        const interval = setInterval(() => {
             if (isPlaying && progress?.current < data?.currentlyPlaying?.trackLength) {
-                progress.current += 1;
-                barWidth.current = `${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`
+              progress.current += 1;
+              barWidth.current = `${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`;
             }
-        }, 1000)
+          }, 1000);
+      
+          return () => clearInterval(interval);
 
     }, [progress.current])
 
