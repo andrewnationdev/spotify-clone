@@ -30,15 +30,15 @@ export default function PlayerComponent() {
         return timeString;
     }
 
-    useEffect(()=>{
-        barWidth.current = `${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`
-    }, [progress.current])
+    useEffect(() => {
+        setTimeout(() => {
+            if (isPlaying && progress?.current < data?.currentlyPlaying?.trackLength) {
+                progress.current += 1;
+                barWidth.current = `${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`
+            }
+        }, 1000)
 
-    setInterval(() => {
-        if (isPlaying && progress?.current < data?.currentlyPlaying?.trackLength){
-            progress.current += 1;
-        }
-    }, 1000)
+    }, [progress.current])
 
     return (
         <div className="player-container">

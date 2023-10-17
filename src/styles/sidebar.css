@@ -64,7 +64,7 @@
     color: var(--textgrey);
     display: flex;
     justify-content: flex-start;
-    border-radius: 8px;
+    border-radius: 8px !important;
     margin-left: -5px;
     margin-right: 5px;
     padding: 10px;
@@ -87,7 +87,7 @@
 
 .playlist-card-picture {
     width: 45.36px;  
-    border-radius: 8px;
+    border-radius: 6px;
     height: 45.36px;
 }
 
