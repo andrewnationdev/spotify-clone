@@ -1,7 +1,7 @@
 import '../../styles/player.css';
 import ButtonIconComponent from './ButtonIcon.component';
 import FavoriteComponent from './favorite.component';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import useSpotifyStore from '../../modules/store';
 
 interface IPlayer {
@@ -30,10 +30,13 @@ export default function PlayerComponent() {
         return timeString;
     }
 
+    useEffect(()=>{
+        barWidth.current = `${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`
+    }, [progress.current])
+
     setInterval(() => {
         if (isPlaying && progress?.current < data?.currentlyPlaying?.trackLength){
             progress.current += 1;
-            barWidth.current = `${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`
         }
     }, 1000)
 
