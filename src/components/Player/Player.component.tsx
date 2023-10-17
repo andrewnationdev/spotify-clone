@@ -35,6 +35,7 @@ export default function PlayerComponent() {
             if (isPlaying && progress?.current < data?.currentlyPlaying?.trackLength) {
               progress.current += 1;
               barWidth.current = `${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`;
+              setState({ progress });
             }
           }, 1000);
       
