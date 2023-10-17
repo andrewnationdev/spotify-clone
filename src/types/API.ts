@@ -10,6 +10,7 @@ export interface ICurrentlyPlaying {
     singer: string;
     cover: string;
     isFavorite: boolean;
+    trackLength: number;
 }
 
 export interface ISection {

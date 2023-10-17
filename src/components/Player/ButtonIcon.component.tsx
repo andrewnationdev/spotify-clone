@@ -6,7 +6,8 @@ export default function ButtonIconComponent(props: {
     icon: string,
     smaller?: boolean,
     isVolumeButton?: boolean,
-    isBootstrap?: boolean
+    isBootstrap?: boolean,
+    onClick?: () => void
 }) {
     const [volume, setVolume] = useState<number>(100);
 
@@ -26,7 +27,7 @@ export default function ButtonIconComponent(props: {
         <div className={`
                 ${props?.smaller ? 'button-icon-smaller' : 'button-icon-large'}
                 ${props?.isPlayButton ? 'play-button-white' : ''}
-            `}>
+            `} onClick={() => props?.onClick()}>
             {props?.isVolumeButton ? <div style={{
                 display: 'flex',
                 flexDirection: 'row',

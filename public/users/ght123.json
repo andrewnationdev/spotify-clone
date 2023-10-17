@@ -97,7 +97,8 @@
         "title": "Let it Go",
         "singer": "Idina Menzel",
         "cover": "https://th.bing.com/th/id/OIP.vejK7vKxmct2FavP7lQ0tQHaHa?pid=ImgDet&rs=1",
-        "isFavorite": true
+        "isFavorite": true,
+        "trackLength": 216
     },
     "sections": [
         {
@@ -278,92 +279,118 @@
             "title": "Paradas",
             "data": [
                 {
-                  "title": "Brasilidades",
-                  "description": "O melhor da música brasileira",
-                  "cover": "https://th.bing.com/th/id/OIP.3fNKneg3F1DP9DKt7T5quwHaHa?pid=ImgDet&rs=1",
-                  "isArtistCard": false
+                    "title": "Brasilidades",
+                    "description": "O melhor da música brasileira",
+                    "cover": "https://th.bing.com/th/id/OIP.3fNKneg3F1DP9DKt7T5quwHaHa?pid=ImgDet&rs=1",
+                    "isArtistCard": false
                 },
                 {
-                  "title": "Forró",
-                  "description": "O ritmo do Nordeste",
-                  "cover": "https://th.bing.com/th/id/OIP.znJC4zRYRFV8opZjPBt81AHaHa?pid=ImgDet&w=520&h=520&rs=1",
-                  "isArtistCard": false
+                    "title": "Forró",
+                    "description": "O ritmo do Nordeste",
+                    "cover": "https://th.bing.com/th/id/OIP.znJC4zRYRFV8opZjPBt81AHaHa?pid=ImgDet&w=520&h=520&rs=1",
+                    "isArtistCard": false
                 },
                 {
-                  "title": "MPB",
-                  "description": "A música popular brasileira",
-                  "cover": "https://linkstorage.linkfire.com/medialinks/images/86e098c6-68e5-4363-83e1-16eebdb026b8/artwork-440x440.jpg",
-                  "isArtistCard": false
+                    "title": "MPB",
+                    "description": "A música popular brasileira",
+                    "cover": "https://linkstorage.linkfire.com/medialinks/images/86e098c6-68e5-4363-83e1-16eebdb026b8/artwork-440x440.jpg",
+                    "isArtistCard": false
                 },
                 {
-                  "title": "Funk",
-                  "description": "O ritmo urbano",
-                  "cover": "https://www.cdhal.nl/media/catalog/product/cache/1cb2ffd6e6617c6e262e9bbd01b25ed1/t/h/thescript-sunsets.jpg",
-                  "isArtistCard": false
+                    "title": "Funk",
+                    "description": "O ritmo urbano",
+                    "cover": "https://www.cdhal.nl/media/catalog/product/cache/1cb2ffd6e6617c6e262e9bbd01b25ed1/t/h/thescript-sunsets.jpg",
+                    "isArtistCard": false
                 }
-              ]
+            ]
         },
         {
             "title": "Novos lançamentos populares",
             "data": [
-                
                 {
-                  "title": "Thriller",
-                  "description": "Michael Jackson",
-                  "isArtistCard": false,
-                  "cover": "https://th.bing.com/th/id/OIP.F3uxSvpgS2gC0oYqXWfcwwHaHa?pid=ImgDet&w=700&h=700&rs=1"
+                    "title": "Thriller",
+                    "description": "Michael Jackson",
+                    "isArtistCard": false,
+                    "cover": "https://th.bing.com/th/id/OIP.F3uxSvpgS2gC0oYqXWfcwwHaHa?pid=ImgDet&w=700&h=700&rs=1"
                 },
                 {
-                  "title": "Hey Jude",
-                  "description": "The Beatles",
-                  "isArtistCard": false,
-                  "genre": "Rock",
-                  "cover": "https://th.bing.com/th/id/OIP.AIxnefl0KJyBBonmU-942QHaHa?pid=ImgDet&w=500&h=500&rs=1"
+                    "title": "Hey Jude",
+                    "description": "The Beatles",
+                    "isArtistCard": false,
+                    "genre": "Rock",
+                    "cover": "https://th.bing.com/th/id/OIP.AIxnefl0KJyBBonmU-942QHaHa?pid=ImgDet&w=500&h=500&rs=1"
                 },
                 {
-                  "title": "Dancing Queen",
-                  "description": "ABBA",
-                  "isArtistCard": false,
-                  "cover": "https://th.bing.com/th/id/R.f928d3b9be5d420d2746a68676c3a529?rik=xIEXI71K6jiFiQ&riu=http%3a%2f%2fimages.rapgenius.com%2f99b82817b66b2ec8064ef6440c2a42cf.1000x1000x1.png&ehk=lhTqDZsprFxmdCHqCdmFPgf582dnTDiyksp6ZSGACc8%3d&risl=&pid=ImgRaw&r=0"
+                    "title": "Dancing Queen",
+                    "description": "ABBA",
+                    "isArtistCard": false,
+                    "cover": "https://th.bing.com/th/id/R.f928d3b9be5d420d2746a68676c3a529?rik=xIEXI71K6jiFiQ&riu=http%3a%2f%2fimages.rapgenius.com%2f99b82817b66b2ec8064ef6440c2a42cf.1000x1000x1.png&ehk=lhTqDZsprFxmdCHqCdmFPgf582dnTDiyksp6ZSGACc8%3d&risl=&pid=ImgRaw&r=0"
                 },
-               
                 {
-                  "title": "Sweet Caroline",
-                  "description": "Neil Diamond",
-                  "isArtistCard": false,
-                  "cover": "https://th.bing.com/th/id/OIP.JPHr-0-sJ7jnf6Apf0l_jAAAAA?pid=ImgDet&w=400&h=400&rs=1"
+                    "title": "Sweet Caroline",
+                    "description": "Neil Diamond",
+                    "isArtistCard": false,
+                    "cover": "https://th.bing.com/th/id/OIP.JPHr-0-sJ7jnf6Apf0l_jAAAAA?pid=ImgDet&w=400&h=400&rs=1"
                 }
-              ]
-              
+            ]
         },
         {
-            "title": "álbuns populares",
+            "title": "Álbuns populares",
             "data": [
                 {
-                  "title": "Rubber Soul",
-                  "description": "The Beatles",
-                  "isArtistCard": false,
-                  "cover": "https://images-na.ssl-images-amazon.com/images/I/71nsMjB%2B5qL._AC_SX679_.jpg"
+                    "title": "Rubber Soul",
+                    "description": "The Beatles",
+                    "isArtistCard": false,
+                    "cover": "https://images-na.ssl-images-amazon.com/images/I/71nsMjB%2B5qL._AC_SX679_.jpg"
                 },
                 {
-                  "title": "The Wall",
-                  "description": "Pink Floyd",
-                  "isArtistCard": false,
-                  "cover": "https://th.bing.com/th/id/OIP.jFuoONh0tRBYOTG6VXZOoQAAAA?pid=ImgDet&rs=1"
+                    "title": "The Wall",
+                    "description": "Pink Floyd",
+                    "isArtistCard": false,
+                    "cover": "https://th.bing.com/th/id/OIP.jFuoONh0tRBYOTG6VXZOoQAAAA?pid=ImgDet&rs=1"
                 },
                 {
-                  "title": "The Joshua Tree",
-                  "description": "U2",
-                  "isArtistCard": false,
-                  "cover": "https://th.bing.com/th/id/OIP.M9dgLpCcEDedZeFEyNUjvQAAAA?pid=ImgDet&rs=1"
+                    "title": "The Joshua Tree",
+                    "description": "U2",
+                    "isArtistCard": false,
+                    "cover": "https://th.bing.com/th/id/OIP.M9dgLpCcEDedZeFEyNUjvQAAAA?pid=ImgDet&rs=1"
                 },
                 {
-                  "title": "Appetite for Destruction",
-                  "description": "Guns N' Roses",
-                  "isArtistCard": false,
-                  "cover": "https://i.pinimg.com/474x/08/40/18/084018a1039f2b87f2fb8c3af75ad63c--alternative-rock-bands-rock-indie.jpg"
+                    "title": "Appetite for Destruction",
+                    "description": "Guns N' Roses",
+                    "isArtistCard": false,
+                    "cover": "https://i.pinimg.com/474x/08/40/18/084018a1039f2b87f2fb8c3af75ad63c--alternative-rock-bands-rock-indie.jpg"
                 }
-              ]
+            ]
+        },
+        {
+            "title": "100% você",
+            "data": [
+                {
+                    "title": "Hey Jude",
+                    "description": "Uma balada de amor do The Beatles",
+                    "isArtistCard": false,
+                    "cover": ""
+                },
+                {
+                    "title": "I Will Survive",
+                    "description": "Uma canção de empoderamento feminino de Gloria Gaynor",
+                    "isArtistCard": false,
+                    "cover": ""
+                },
+                {
+                    "title": "Sweet Caroline",
+                    "description": "Uma canção de amor de Neil Diamond",
+                    "isArtistCard": false,
+                    "cover": ""
+                },
+                {
+                    "title": "What's Up",
+                    "description": "Uma canção grunge de 4 Non Blondes",
+                    "isArtistCard": false,
+                    "cover": ""
+                }
+            ]
         }
     ]
 }

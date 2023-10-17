@@ -13,11 +13,12 @@ interface IPlayer {
 }
 
 export default function PlayerComponent() {
-    const [progress, setProgress] = useState<number>(150);
+    const [progress, setProgress] = useState<number>(0);
+    const [isPlaying, setPlaying] = useState<boolean>(false);
 
     const { data, updateData } = useSpotifyStore()
 
-    const {currentlyPlaying} = data;
+    const { currentlyPlaying } = data;
 
     const convertSecondsToMinutes = (second: number) => {
         const minutes = Math.floor(second / 60);
@@ -27,6 +28,11 @@ export default function PlayerComponent() {
         return timeString;
     }
 
+    setInterval(() => {
+        if (isPlaying && progress < data?.currentlyPlaying?.trackLength) 7
+        setProgress(progress + 1);
+    }, 1000)
+
     return (
         <div className="player-container">
             <div className="player-left-area">
@@ -35,7 +41,7 @@ export default function PlayerComponent() {
                     <span className="player-music-name">{currentlyPlaying.title}</span>
                     <span className="player-music-singer">{currentlyPlaying.singer}</span>
                 </div>
-                <FavoriteComponent isFavorite={currentlyPlaying.isFavorite}/>
+                <FavoriteComponent isFavorite={currentlyPlaying.isFavorite} />
             </div>
             <div className="player-center-area">
                 <div className="buttons-container">
@@ -45,9 +51,13 @@ export default function PlayerComponent() {
                     <ButtonIconComponent isPlayButton={false}
                         icon={"skip_previous"}
                     />
-                    <ButtonIconComponent isPlayButton={true}
+                    {isPlaying ? <ButtonIconComponent isPlayButton={true}
                         icon={"play_circle_filled"}
-                    />
+                        onClick={() => setPlaying(!isPlaying)}
+                    /> : <ButtonIconComponent isPlayButton={true}
+                        icon={"play_circle_filled"}
+                        onClick={() => setPlaying(!isPlaying)}
+                    />}
                     <ButtonIconComponent isPlayButton={false}
                         icon={"skip_next"}
                     />
@@ -64,7 +74,7 @@ export default function PlayerComponent() {
 
                     <div className="track-progressbar">
                         <div style={{
-                            width: '75%',
+                            width: `${(progress / data?.currentlyPlaying?.trackLength) * 100}%`,
                             backgroundColor: '#fff',
                             height: '5px'
                         }}></div>
@@ -72,16 +82,16 @@ export default function PlayerComponent() {
 
                     <span style={{
                         fontSize: 12
-                    }}>{convertSecondsToMinutes(200)}</span>
+                    }}>{convertSecondsToMinutes(data?.currentlyPlaying?.trackLength)}</span>
                 </div>
             </div>
             <div className="player-right-area">
                 <ButtonIconComponent icon={"file-play"} smaller isBootstrap />
-                <ButtonIconComponent icon={"question-circle"} smaller isBootstrap/>
-                <ButtonIconComponent icon={"question-circle"} smaller isBootstrap/>
-                <ButtonIconComponent icon={"speaker"} smaller isBootstrap/>
-                <ButtonIconComponent icon={"question-circle"} smaller isVolumeButton isBootstrap/>
-                <ButtonIconComponent icon={"pip"} smaller isBootstrap/>
+                <ButtonIconComponent icon={"question-circle"} smaller isBootstrap />
+                <ButtonIconComponent icon={"question-circle"} smaller isBootstrap />
+                <ButtonIconComponent icon={"speaker"} smaller isBootstrap />
+                <ButtonIconComponent icon={"question-circle"} smaller isVolumeButton isBootstrap />
+                <ButtonIconComponent icon={"pip"} smaller isBootstrap />
             </div>
         </div>
     );

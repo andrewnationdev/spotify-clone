@@ -15,6 +15,7 @@ const useSpotifyStore = create<{data: IAPIResponse} & IStoreActions>((set) => ({
         singer: '',
         cover: '',
         isFavorite: false,
+        trackLength: 0
       },
       sections: [],
     },
