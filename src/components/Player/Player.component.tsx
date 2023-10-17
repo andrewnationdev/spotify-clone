@@ -15,7 +15,7 @@ interface IPlayer {
 export default function PlayerComponent() {
     //const [progress, setProgress] = useState<number>(0);
     const progress = useRef(0);
-    const barWidth = useRef(`0%`);
+    const [barWidth, setBarWidth] = useState(`0%`);
     const [isPlaying, setPlaying] = useState<boolean>(false);
 
     const { data, updateData } = useSpotifyStore()
@@ -34,8 +34,7 @@ export default function PlayerComponent() {
         const interval = setInterval(() => {
             if (isPlaying && progress?.current < data?.currentlyPlaying?.trackLength) {
               progress.current += 1;
-              barWidth.current = `${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`;
-              setState({ progress });
+                setBarWidth(`${(progress?.current / data?.currentlyPlaying?.trackLength) * 100}%`);
             }
           }, 1000);
       
@@ -84,7 +83,7 @@ export default function PlayerComponent() {
 
                     <div className="track-progressbar">
                         <div style={{
-                            width: barWidth?.current,
+                            width: barWidth,
                             backgroundColor: '#fff',
                             height: '5px'
                         }}></div>
@@ -106,25 +105,3 @@ export default function PlayerComponent() {
         </div>
     );
 }
-
-/**
- * 
- *                     <input type="range" className="playbrack-track"
-                        min={0}
-                        max={200}
-                        onChange={(e) => setProgress(Number(e?.target?.value))}
-                        step={1}
-                        value={progress}
-                    />
-
-                                        <div className="progress-bar">
-                        <div className="progress-bar-fill"></div>
-                        <input type="range" className="progress-slider"
-                            min={0}
-                            max={200}
-                            onChange={(e) => setProgress(Number(e?.target?.value))}
-                            step={1}
-                            value={progress}
-                        />
-                    </div>
- */
