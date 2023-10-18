@@ -22,6 +22,11 @@
 .section-show-more {
     color: var(--textgrey);
     font-size: 13px;
+    font-weight: 600;
+}
+
+.section-show-more:hover {
+    text-decoration: underline;
 }
 
 .section-title {

@@ -97,8 +97,8 @@ export default function PlayerComponent() {
             </div>
             <div className="player-right-area">
                 <ButtonIconComponent icon={"file-play"} smaller isBootstrap />
-                <ButtonIconComponent icon={"question-circle"} smaller isBootstrap />
-                <ButtonIconComponent icon={"question-circle"} smaller isBootstrap />
+                <ButtonIconComponent icon={"mic"} smaller isBootstrap />
+                <ButtonIconComponent icon={"collection"} smaller isBootstrap />
                 <ButtonIconComponent icon={"speaker"} smaller isBootstrap />
                 <ButtonIconComponent icon={"question-circle"} smaller isVolumeButton isBootstrap />
                 <ButtonIconComponent icon={"pip"} smaller isBootstrap />
