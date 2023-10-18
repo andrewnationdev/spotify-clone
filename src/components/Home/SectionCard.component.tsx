@@ -1,7 +1,7 @@
 import '../../styles/home.css';
 import truncateText from '../../utils/Truncate';
 import useSpotifyStore from '../../modules/store';
-import {IAPIResponse} from '../../types/types';
+import {IAPIResponse} from '../../types/API';
 
 export default function SectionCardComponent(props: {
     data: {
