@@ -1,6 +1,7 @@
 import '../../styles/home.css';
 import truncateText from '../../utils/Truncate';
 import useSpotifyStore from '../../modules/store';
+import {IAPIResponse} from '../../types/types';
 
 export default function SectionCardComponent(props: {
     data: {
@@ -21,7 +22,7 @@ export default function SectionCardComponent(props: {
             <div className="section-card-main">
                 <img className="section-card-picture" src={props?.data?.cover} alt="" />
                 <i className="material-icons card-play-button" onClick={()=>{
-                    updateData((s)=>({
+                    updateData((s: IAPIResponse)=>({
                         ...s,
                         currentlyPlaying: {
                             title: props?.data?.title,
