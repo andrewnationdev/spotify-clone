@@ -23,6 +23,7 @@ export default function SectionCardComponent(props: {
                 <img className="section-card-picture" src={props?.data?.cover} alt="" />
                 <i className="material-icons card-play-button" onClick={()=>{
                     updateData({
+                        ...data,
                         currentlyPlaying: {
                             title: props?.data?.title,
                             cover: props?.data?.cover,
