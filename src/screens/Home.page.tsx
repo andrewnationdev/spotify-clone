@@ -4,8 +4,15 @@ import CircleDarkerButtonComponent from '../components/CircleDarkerButton.compon
 import AvatarCircleComponent from '../components/AvatarCircle.component';
 import {userMock} from '../mock/userMock';
 import SectionsComponent from '../components/Home/Sections.component';
+import React, {useState, useEffect}  from 'react';
+import { IAPIResponse } from '../types/API';
+import useSpotifyStore from '../modules/store';
 
 export default function HomeScreen() {
+    const { data, updateData } = useSpotifyStore()
+
+    const {avatar} = data;
+
     return (
         <div className="page-container">
             <header>
@@ -16,14 +23,15 @@ export default function HomeScreen() {
                 <div className="right-header-container">
                     <button className="pill-button-header white-pill">Ver planos Premium</button>
                     <button className="pill-button-header black-pill">
-                        <i className="material-icons">get_app</i>
+                        <i className="bi bi-save"></i>
                         Instalar aplicativo
                     </button>
-                    <AvatarCircleComponent avatarURL={userMock.avatar}/>
+                    <CircleDarkerButtonComponent icon="notifications_none"/>
+                    <AvatarCircleComponent avatarURL={avatar}/>
                 </div>
             </header>
-            <div>
-                <SectionsComponent></SectionsComponent>
+            <div className="main-page-section">
+                <SectionsComponent/>
             </div>
         </div>
     );

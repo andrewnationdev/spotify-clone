@@ -6,8 +6,13 @@
     align-items: center;
 }
 
+.player-container > * {
+    font-weight: 600;
+}
+
 .player-cover-picture {
     width: 56px;
+    height: 56px;
     border-radius: 8px;
 }
 
@@ -64,7 +69,7 @@
 }
 
 .button-icon-smaller > i {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: var(--textgrey) !important;
     cursor: pointer;
 }
@@ -112,4 +117,5 @@
     align-items: flex-start;
     padding-left: 15px;
     padding-right: 15px;
+    width: 129px;
 }

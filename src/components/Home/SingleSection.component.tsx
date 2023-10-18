@@ -13,11 +13,13 @@ export default function SingleSectionComponent(props: {
     return (
         <section className="section-container">
             <div className="section-header">
-                <span className="section-title">{props?.title}</span>
+                <span className={`section-title ${props?.title != 'Tocados recentemente' ? 'section-link' : ''}`}>{props?.title}</span>
                 <span className="section-show-more">Mostrar mais</span>
             </div>
             <div className="section-cards">
-                <SectionCardComponent data={props?.data[0]} />
+                {props?.data.map((item) => 
+                    <SectionCardComponent data={item} />
+                )}
             </div>
         </section>
     )

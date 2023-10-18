@@ -1,9 +1,10 @@
 .page-container {
+    /*trocar o background o valor do var pra --grey só*/
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin: 8px 8px 8px 0px;
-    background-color: var(--lightergrey);
+    background-color: var(--grey);
     padding: 18.8px;
 }
 

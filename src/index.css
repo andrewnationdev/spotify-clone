@@ -26,3 +26,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--lightergrey);
+}

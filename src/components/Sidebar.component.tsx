@@ -4,9 +4,13 @@ import LibrarySidebarHeaderComponent from './LibrarySidebarHeader.component';
 import '../styles/pages.css';
 import CircleIconButtonComponent from './CircleIconButton.component';
 import PlaylistsLibraryCardComponent from './PlaylistsLibraryCard.component';
-import { userMock } from '../mock/userMock';
+import useSpotifyStore from '../modules/store';
 
 export default function SidebarComponent() {
+    const { data, updateData } = useSpotifyStore()
+
+    const {playlists} = data;
+
     return (
         <div>
             <SidebarSectionComponent>
@@ -34,7 +38,7 @@ export default function SidebarComponent() {
                     </a>
                 </div>
                 <div className="playlists-vertical">
-                    {userMock!.playlists.map((playlist) =>
+                    {playlists.length > 0 && playlists.map((playlist) =>
                     <PlaylistsLibraryCardComponent
                         title={playlist.title}
                         creator={playlist.creator}
