@@ -109,5 +109,5 @@
     overflow-y: auto;
     overflow-x: hidden;
     height: 318px;
-    /*adicionar 12px de margin-right*/
+    margin-right: 12px;
 }
