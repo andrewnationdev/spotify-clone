@@ -41,7 +41,7 @@ export default function PlayerComponent() {
       
           return () => clearInterval(interval);
 
-    }, [progress.current, isPlaying])
+    }, [progress.current, isPlaying]);
 
     return (
         <div className="player-container">
