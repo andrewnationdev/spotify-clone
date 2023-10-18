@@ -22,8 +22,7 @@ export default function SectionCardComponent(props: {
             <div className="section-card-main">
                 <img className="section-card-picture" src={props?.data?.cover} alt="" />
                 <i className="material-icons card-play-button" onClick={()=>{
-                    updateData((s: IAPIResponse)=>({
-                        ...s,
+                    updateData({
                         currentlyPlaying: {
                             title: props?.data?.title,
                             cover: props?.data?.cover,
@@ -31,7 +30,7 @@ export default function SectionCardComponent(props: {
                             isFavorite: false,
                             trackLength: Math.floor(Math.random() * (150 + 1))
                         }
-                    }))
+                })
                 }}>play_circle_filled</i>
             </div>
             <div className="section-card-info">
