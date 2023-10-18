@@ -64,7 +64,7 @@
     color: var(--textgrey);
     display: flex;
     justify-content: flex-start;
-    border-radius: 8px !important;
+    border-radius: 12px !important;
     margin-left: -5px;
     margin-right: 5px;
     padding: 10px;
@@ -109,4 +109,5 @@
     overflow-y: auto;
     overflow-x: hidden;
     height: 318px;
+    /*adicionar 12px de margin-right*/
 }
